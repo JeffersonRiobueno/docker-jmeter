@@ -12870,7 +12870,7 @@
             </elementProp>
             <elementProp name="TARGET_LOOPS" elementType="Argument">
               <stringProp name="Argument.name">TARGET_LOOPS</stringProp>
-              <stringProp name="Argument.value">${__P(TARGET_LOOPS)</stringProp>
+              <stringProp name="Argument.value">${__P(TARGET_LOOPS)}</stringProp>
               <stringProp name="Argument.metadata">=</stringProp>
             </elementProp>
           </collectionProp>
