@@ -1,205 +1,322 @@
-2021-01-31 03:53:57,285 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
-2021-01-31 03:53:57,307 INFO o.a.j.JMeter: Loading user properties from: /opt/apache-jmeter-5.1.1/bin/user.properties
-2021-01-31 03:53:57,307 INFO o.a.j.JMeter: Loading system properties from: /opt/apache-jmeter-5.1.1/bin/system.properties
-2021-01-31 03:53:57,307 INFO o.a.j.JMeter: Setting System property: log_level.jmeter=DEBUG
-2021-01-31 03:53:57,308 INFO o.a.j.JMeter: Setting JMeter property: TARGET_THREADS=20
-2021-01-31 03:53:57,308 INFO o.a.j.JMeter: Setting JMeter property: TARGET_TOKEN=c0bf1f21b271b8ad53dd846af507fc918ecc4286da
-2021-01-31 03:53:57,308 INFO o.a.j.JMeter: Setting JMeter property: TARGET_TIME=60
-2021-01-31 03:53:57,308 INFO o.a.j.JMeter: Setting JMeter property: TARGET_LOOPS=1
-2021-01-31 03:53:57,313 INFO o.a.j.JMeter: Copyright (c) 1998-2019 The Apache Software Foundation
-2021-01-31 03:53:57,313 INFO o.a.j.JMeter: Version 5.1.1 r1855137
-2021-01-31 03:53:57,314 INFO o.a.j.JMeter: java.version=1.8.0_222
-2021-01-31 03:53:57,314 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
-2021-01-31 03:53:57,314 INFO o.a.j.JMeter: os.name=Linux
-2021-01-31 03:53:57,314 INFO o.a.j.JMeter: os.arch=amd64
-2021-01-31 03:53:57,314 INFO o.a.j.JMeter: os.version=5.4.0-1037-aws
-2021-01-31 03:53:57,314 INFO o.a.j.JMeter: file.encoding=UTF-8
-2021-01-31 03:53:57,314 INFO o.a.j.JMeter: java.awt.headless=true
-2021-01-31 03:53:57,314 INFO o.a.j.JMeter: Max memory     =25920798720
-2021-01-31 03:53:57,314 INFO o.a.j.JMeter: Available Processors =8
-2021-01-31 03:53:57,320 INFO o.a.j.JMeter: Default Locale=English (EN)
-2021-01-31 03:53:57,320 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
-2021-01-31 03:53:57,320 INFO o.a.j.JMeter: JMeterHome=/opt/apache-jmeter-5.1.1
-2021-01-31 03:53:57,320 INFO o.a.j.JMeter: user.dir  =/home/ubuntu/jmeter
-2021-01-31 03:53:57,320 INFO o.a.j.JMeter: PWD       =/home/ubuntu/jmeter
-2021-01-31 03:53:57,321 INFO o.a.j.JMeter: IP: 172.17.0.2 Name: 2c21a6547016 FullName: 2c21a6547016
-2021-01-31 03:53:57,323 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'/home/ubuntu/jmeter/tests/compra/trreport-2021-01-31-03-53'
-2021-01-31 03:53:57,326 INFO o.a.j.s.FileServer: Default base='/home/ubuntu/jmeter'
-2021-01-31 03:53:57,332 INFO o.a.j.s.FileServer: Set new base='/home/ubuntu/jmeter/tests/compra'
-2021-01-31 03:53:57,505 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
-2021-01-31 03:53:57,522 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
-2021-01-31 03:53:57,528 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
-2021-01-31 03:53:57,537 INFO o.a.j.s.SaveService: Loading file: tests/compra/PSWRSV-2021.jmx
-2021-01-31 03:53:57,588 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
-2021-01-31 03:53:57,599 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2021-01-31 03:53:57,599 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2021-01-31 03:53:57,600 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2021-01-31 03:53:57,600 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2021-01-31 03:53:57,600 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
-2021-01-31 03:53:57,600 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
-2021-01-31 03:53:57,958 INFO o.a.j.e.KeyToolUtils: keytool found at 'keytool'
-2021-01-31 03:53:57,959 INFO o.a.j.p.h.p.ProxyControl: HTTP(S) Test Script Recorder SSL Proxy will use keys that support embedded 3rd party resources in file /opt/apache-jmeter-5.1.1/bin/proxyserver.jks
-2021-01-31 03:53:58,001 INFO o.a.j.JMeter: Creating summariser <summary>
-2021-01-31 03:53:58,016 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
-2021-01-31 03:53:58,016 INFO o.a.j.r.d.ReportGenerator: Will generate report at end of test from  results file: tests/compra/test-plan.jtl
-2021-01-31 03:53:58,016 INFO o.a.j.r.d.ReportGenerator: Reading report generator properties from: /opt/apache-jmeter-5.1.1/bin/reportgenerator.properties
-2021-01-31 03:53:58,017 INFO o.a.j.r.d.ReportGenerator: Merging with JMeter properties
-2021-01-31 03:53:58,023 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.temp_dir' not found, using default value 'temp' instead.
-2021-01-31 03:53:58,026 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.apdex_per_transaction' not found, using default value 'null' instead.
-2021-01-31 03:53:58,026 INFO o.a.j.r.c.ReportGeneratorConfiguration: apdex_per_transaction : {} is empty, not APDEX per transaction customization
-2021-01-31 03:53:58,027 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.sample_filter' not found, using default value 'null' instead.
-2021-01-31 03:53:58,027 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.report_title' not found, using default value 'null' instead.
-2021-01-31 03:53:58,027 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.start_date' not found, using default value 'null' instead.
-2021-01-31 03:53:58,027 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.end_date' not found, using default value 'null' instead.
-2021-01-31 03:53:58,027 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.date_format' not found, using default value 'null' instead.
-2021-01-31 03:53:58,028 INFO o.a.j.r.c.ReportGeneratorConfiguration: Will use date range start date: null, end date: null
-2021-01-31 03:53:58,033 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.totalTPS.exclude_controllers' not found, using default value 'false' instead.
-2021-01-31 03:53:58,033 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.activeThreadsOverTime.exclude_controllers' not found, using default value 'false' instead.
-2021-01-31 03:53:58,033 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.timeVsThreads.exclude_controllers' not found, using default value 'false' instead.
-2021-01-31 03:53:58,033 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimeDistribution.exclude_controllers' not found, using default value 'false' instead.
-2021-01-31 03:53:58,034 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.transactionsPerSecond.exclude_controllers' not found, using default value 'false' instead.
-2021-01-31 03:53:58,034 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentiles.exclude_controllers' not found, using default value 'false' instead.
-2021-01-31 03:53:58,034 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentilesOverTime.exclude_controllers' not found, using default value 'false' instead.
-2021-01-31 03:53:58,034 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimesOverTime.exclude_controllers' not found, using default value 'false' instead.
-2021-01-31 03:53:58,034 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.connectTimeOverTime.exclude_controllers' not found, using default value 'false' instead.
-2021-01-31 03:53:58,035 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.latenciesOverTime.exclude_controllers' not found, using default value 'false' instead.
-2021-01-31 03:53:58,036 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.filters_only_sample_series' not found, using default value 'true' instead.
-2021-01-31 03:53:58,036 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.series_filter' not found, using default value '' instead.
-2021-01-31 03:53:58,036 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.show_controllers_only' not found, using default value 'false' instead.
-2021-01-31 03:53:58,036 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.filters_only_sample_series' not found, using default value 'true' instead.
-2021-01-31 03:53:58,037 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.series_filter' not found, using default value '' instead.
-2021-01-31 03:53:58,037 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.show_controllers_only' not found, using default value 'false' instead.
-2021-01-31 03:53:58,042 INFO o.a.j.e.StandardJMeterEngine: Running the test!
-2021-01-31 03:53:58,043 INFO o.a.j.s.SampleEvent: List of sample_variables: []
-2021-01-31 03:53:58,043 INFO o.a.j.s.SampleEvent: List of sample_variables: []
-2021-01-31 03:53:58,050 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
-2021-01-31 03:53:58,050 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
-2021-01-31 03:53:58,492 INFO o.a.j.JMeter: Running test (1612065238492)
-2021-01-31 03:53:58,685 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Grupo de Hilos
-2021-01-31 03:53:58,685 INFO o.a.j.e.StandardJMeterEngine: Starting 20 threads for group Grupo de Hilos.
-2021-01-31 03:53:58,685 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
-2021-01-31 03:53:58,686 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=20 ramp-up=60 delayedStart=false
-2021-01-31 03:53:58,723 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-1
-2021-01-31 03:53:58,750 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = 2c21a6547016
-2021-01-31 03:53:58,757 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
-2021-01-31 03:53:58,760 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
-2021-01-31 03:53:58,760 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
-2021-01-31 03:53:58,760 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
-2021-01-31 03:53:58,760 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
-2021-01-31 03:53:58,849 INFO o.a.j.t.ThreadGroup: Started thread group number 1
-2021-01-31 03:53:58,849 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
-2021-01-31 03:53:58,861 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
-2021-01-31 03:53:58,869 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
-2021-01-31 03:53:58,869 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
-2021-01-31 03:53:58,925 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
-2021-01-31 03:53:58,929 INFO o.a.j.u.SSLManager: KeyStore created OK
-2021-01-31 03:53:58,929 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
-2021-01-31 03:54:00,184 INFO o.a.j.r.Summariser: summary +      4 in 00:00:02 =    2.4/s Avg:   339 Min:    32 Max:  1065 Err:     1 (25.00%) Active: 1 Started: 1 Finished: 0
-2021-01-31 03:54:01,719 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-2
-2021-01-31 03:54:04,721 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-3
-2021-01-31 03:54:07,727 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-4
-2021-01-31 03:54:10,725 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-5
-2021-01-31 03:54:13,730 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-6
-2021-01-31 03:54:16,728 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-7
-2021-01-31 03:54:19,206 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-2
-2021-01-31 03:54:19,207 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-2
-2021-01-31 03:54:19,716 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-8
-2021-01-31 03:54:22,323 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-3
-2021-01-31 03:54:22,323 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-3
-2021-01-31 03:54:22,399 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-1
-2021-01-31 03:54:22,399 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-1
-2021-01-31 03:54:22,730 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-9
-2021-01-31 03:54:25,727 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-10
-2021-01-31 03:54:27,793 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-4
-2021-01-31 03:54:27,793 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-4
-2021-01-31 03:54:28,723 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-11
-2021-01-31 03:54:30,034 INFO o.a.j.r.Summariser: summary +   1629 in 00:00:30 =   54.6/s Avg:    89 Min:     2 Max:  2614 Err:   186 (11.42%) Active: 7 Started: 11 Finished: 4
-2021-01-31 03:54:30,035 INFO o.a.j.r.Summariser: summary =   1633 in 00:00:32 =   51.8/s Avg:    90 Min:     2 Max:  2614 Err:   187 (11.45%)
-2021-01-31 03:54:31,719 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-12
-2021-01-31 03:54:32,059 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-6
-2021-01-31 03:54:32,060 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-6
-2021-01-31 03:54:34,729 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-13
-2021-01-31 03:54:37,716 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-14
-2021-01-31 03:54:39,971 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-5
-2021-01-31 03:54:39,971 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-5
-2021-01-31 03:54:40,728 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-15
-2021-01-31 03:54:41,255 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-7
-2021-01-31 03:54:41,255 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-7
-2021-01-31 03:54:43,717 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-16
-2021-01-31 03:54:45,671 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-8
-2021-01-31 03:54:45,671 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-8
-2021-01-31 03:54:45,926 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-10
-2021-01-31 03:54:45,926 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-10
-2021-01-31 03:54:46,721 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-17
-2021-01-31 03:54:49,038 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-9
-2021-01-31 03:54:49,038 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-9
-2021-01-31 03:54:49,725 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-18
-2021-01-31 03:54:51,955 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-12
-2021-01-31 03:54:51,955 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-12
-2021-01-31 03:54:52,724 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-19
-2021-01-31 03:54:53,479 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-11
-2021-01-31 03:54:53,480 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-11
-2021-01-31 03:54:55,715 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-20
-2021-01-31 03:54:55,858 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-13
-2021-01-31 03:54:55,858 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-13
-2021-01-31 03:54:59,503 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-15
-2021-01-31 03:54:59,503 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-15
-2021-01-31 03:54:59,652 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-14
-2021-01-31 03:54:59,652 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-14
-2021-01-31 03:55:00,001 INFO o.a.j.r.Summariser: summary +   2011 in 00:00:30 =   67.1/s Avg:   114 Min:     1 Max:  2916 Err:   274 (13.63%) Active: 5 Started: 20 Finished: 15
-2021-01-31 03:55:00,001 INFO o.a.j.r.Summariser: summary =   3644 in 00:01:02 =   59.2/s Avg:   103 Min:     1 Max:  2916 Err:   461 (12.65%)
-2021-01-31 03:55:04,525 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-16
-2021-01-31 03:55:04,525 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-16
-2021-01-31 03:55:12,476 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-18
-2021-01-31 03:55:12,476 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-18
-2021-01-31 03:55:13,371 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-19
-2021-01-31 03:55:13,371 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-19
-2021-01-31 03:55:15,433 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-17
-2021-01-31 03:55:15,433 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-17
-2021-01-31 03:55:17,050 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-20
-2021-01-31 03:55:17,051 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-20
-2021-01-31 03:55:17,051 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
-2021-01-31 03:55:17,052 INFO o.a.j.r.Summariser: summary +    416 in 00:00:17 =   24.4/s Avg:   157 Min:     2 Max:  2819 Err:    79 (18.99%) Active: 0 Started: 20 Finished: 20
-2021-01-31 03:55:17,052 INFO o.a.j.r.Summariser: summary =   4060 in 00:01:19 =   51.7/s Avg:   109 Min:     1 Max:  2916 Err:   540 (13.30%)
-2021-01-31 03:55:17,052 INFO o.a.j.JMeter: Generating Dashboard
-2021-01-31 03:55:17,052 INFO o.a.j.r.d.ReportGenerator: Flushing result collector before report Generation
-2021-01-31 03:55:17,066 INFO o.a.j.r.p.NormalizerSampleConsumer: Using format, 'ms', to parse timeStamp field
-2021-01-31 03:55:17,389 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): beginDate produced 0 samples
-2021-01-31 03:55:17,389 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): endDate produced 0 samples
-2021-01-31 03:55:17,393 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ApdexSummaryConsumer#stopProducing(): apdexSummary produced 0 samples
-2021-01-31 03:55:17,393 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.RequestsSummaryConsumer#stopProducing(): requestsSummary produced 0 samples
-2021-01-31 03:55:17,407 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.StatisticsSummaryConsumer#stopProducing(): statisticsSummary produced 0 samples
-2021-01-31 03:55:17,415 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.Top5ErrorsBySamplerConsumer#stopProducing(): top5ErrorsBySampler produced 0 samples
-2021-01-31 03:55:17,415 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ErrorsSummaryConsumer#stopProducing(): errorsSummary produced 0 samples
-2021-01-31 03:55:17,415 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.HitsPerSecondGraphConsumer#stopProducing(): hitsPerSecond produced 0 samples
-2021-01-31 03:55:17,485 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyVSRequestGraphConsumer#stopProducing(): latencyVsRequest produced 0 samples
-2021-01-31 03:55:17,486 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.SyntheticResponseTimeDistributionGraphConsumer#stopProducing(): syntheticResponseTimeDistribution produced 0 samples
-2021-01-31 03:55:17,487 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.BytesThroughputGraphConsumer#stopProducing(): bytesThroughputOverTime produced 0 samples
-2021-01-31 03:55:17,487 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.CodesPerSecondGraphConsumer#stopProducing(): codesPerSecond produced 0 samples
-2021-01-31 03:55:17,521 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeVSRequestGraphConsumer#stopProducing(): responseTimeVsRequest produced 0 samples
-2021-01-31 03:55:17,522 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): startIntervalControlerFilter produced 28420 samples
-2021-01-31 03:55:17,522 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TotalTPSGraphConsumer#stopProducing(): totalTPS produced 0 samples
-2021-01-31 03:55:17,522 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ActiveThreadsGraphConsumer#stopProducing(): activeThreadsOverTime produced 0 samples
-2021-01-31 03:55:17,523 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TimeVSThreadGraphConsumer#stopProducing(): timeVsThreads produced 0 samples
-2021-01-31 03:55:17,543 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeDistributionGraphConsumer#stopProducing(): responseTimeDistribution produced 0 samples
-2021-01-31 03:55:17,545 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TransactionsPerSecondGraphConsumer#stopProducing(): transactionsPerSecond produced 0 samples
-2021-01-31 03:55:17,547 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesGraphConsumer#stopProducing(): responseTimePercentiles produced 0 samples
-2021-01-31 03:55:17,596 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesOverTimeGraphConsumer#stopProducing(): responseTimePercentilesOverTime produced 0 samples
-2021-01-31 03:55:17,597 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeOverTimeGraphConsumer#stopProducing(): responseTimesOverTime produced 0 samples
-2021-01-31 03:55:17,599 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ConnectTimeOverTimeGraphConsumer#stopProducing(): connectTimeOverTime produced 0 samples
-2021-01-31 03:55:17,601 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyOverTimeGraphConsumer#stopProducing(): latenciesOverTime produced 0 samples
-2021-01-31 03:55:17,603 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): nameFilter produced 60900 samples
-2021-01-31 03:55:17,603 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): dateRangeFilter produced 12180 samples
-2021-01-31 03:55:17,603 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.NormalizerSampleConsumer#stopProducing(): normalizer produced 4060 samples
-2021-01-31 03:55:17,603 INFO o.a.j.r.p.CsvFileSampleSource: produce(): 4060 samples produced in 505ms on channel 0
-2021-01-31 03:55:17,604 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'json' of className:'org.apache.jmeter.report.dashboard.JsonExporter'
-2021-01-31 03:55:17,606 INFO o.a.j.r.d.JsonExporter: Found data for consumer statisticsSummary in context
-2021-01-31 03:55:17,606 INFO o.a.j.r.d.JsonExporter: Creating statistics for overall
-2021-01-31 03:55:17,607 INFO o.a.j.r.d.JsonExporter: Creating statistics for other transactions
-2021-01-31 03:55:17,608 INFO o.a.j.r.d.JsonExporter: Checking output folder
-2021-01-31 03:55:17,608 INFO o.a.j.r.d.JsonExporter: Writing statistics JSON to /home/ubuntu/jmeter/tests/compra/trreport-2021-01-31-03-53/statistics.json
-2021-01-31 03:55:17,836 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'html' of className:'org.apache.jmeter.report.dashboard.HtmlTemplateExporter'
-2021-01-31 03:55:17,840 INFO o.a.j.r.d.HtmlTemplateExporter: Will generate dashboard in folder: /home/ubuntu/jmeter/tests/compra/trreport-2021-01-31-03-53
-2021-01-31 03:55:18,313 INFO o.a.j.r.d.HtmlTemplateExporter: Report will be generated in: /home/ubuntu/jmeter/tests/compra/trreport-2021-01-31-03-53, creating folder structure
-2021-01-31 03:55:18,318 INFO o.a.j.r.d.TemplateVisitor: Copying folder from '/opt/apache-jmeter-5.1.1/bin/report-template' to '/home/ubuntu/jmeter/tests/compra/trreport-2021-01-31-03-53', got message:[/home/ubuntu/jmeter/tests/compra/trreport-2021-01-31-03-53/statistics.json], found non empty folder with following content {}, will be ignored
-2021-01-31 03:55:18,675 INFO o.a.j.JMeter: Dashboard generated
+2021-01-31 06:32:49,884 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2021-01-31 06:32:49,906 INFO o.a.j.JMeter: Loading user properties from: /opt/apache-jmeter-5.1.1/bin/user.properties
+2021-01-31 06:32:49,907 INFO o.a.j.JMeter: Loading system properties from: /opt/apache-jmeter-5.1.1/bin/system.properties
+2021-01-31 06:32:49,907 INFO o.a.j.JMeter: Setting System property: log_level.jmeter=DEBUG
+2021-01-31 06:32:49,907 INFO o.a.j.JMeter: Setting JMeter property: TARGET_THREADS=200
+2021-01-31 06:32:49,907 INFO o.a.j.JMeter: Setting JMeter property: TARGET_TOKEN=25c0dd90fc4ac6c135df0d02ab5f24738ecc4286da
+2021-01-31 06:32:49,907 INFO o.a.j.JMeter: Setting JMeter property: TARGET_TIME=60
+2021-01-31 06:32:49,907 INFO o.a.j.JMeter: Setting JMeter property: TARGET_LOOPS=5
+2021-01-31 06:32:49,913 INFO o.a.j.JMeter: Copyright (c) 1998-2019 The Apache Software Foundation
+2021-01-31 06:32:49,913 INFO o.a.j.JMeter: Version 5.1.1 r1855137
+2021-01-31 06:32:49,913 INFO o.a.j.JMeter: java.version=1.8.0_222
+2021-01-31 06:32:49,913 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2021-01-31 06:32:49,913 INFO o.a.j.JMeter: os.name=Linux
+2021-01-31 06:32:49,913 INFO o.a.j.JMeter: os.arch=amd64
+2021-01-31 06:32:49,913 INFO o.a.j.JMeter: os.version=5.4.0-1037-aws
+2021-01-31 06:32:49,914 INFO o.a.j.JMeter: file.encoding=UTF-8
+2021-01-31 06:32:49,914 INFO o.a.j.JMeter: java.awt.headless=true
+2021-01-31 06:32:49,914 INFO o.a.j.JMeter: Max memory     =19142803456
+2021-01-31 06:32:49,914 INFO o.a.j.JMeter: Available Processors =8
+2021-01-31 06:32:49,919 INFO o.a.j.JMeter: Default Locale=English (EN)
+2021-01-31 06:32:49,920 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2021-01-31 06:32:49,920 INFO o.a.j.JMeter: JMeterHome=/opt/apache-jmeter-5.1.1
+2021-01-31 06:32:49,920 INFO o.a.j.JMeter: user.dir  =/home/ubuntu/jmeter
+2021-01-31 06:32:49,920 INFO o.a.j.JMeter: PWD       =/home/ubuntu/jmeter
+2021-01-31 06:32:49,920 INFO o.a.j.JMeter: IP: 172.17.0.3 Name: 9529f2ddeedf FullName: 9529f2ddeedf
+2021-01-31 06:32:49,923 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'/home/ubuntu/jmeter/tests/compra/report-2021-01-31-06-32'
+2021-01-31 06:32:49,926 INFO o.a.j.s.FileServer: Default base='/home/ubuntu/jmeter'
+2021-01-31 06:32:49,932 INFO o.a.j.s.FileServer: Set new base='/home/ubuntu/jmeter/tests/compra'
+2021-01-31 06:32:50,102 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2021-01-31 06:32:50,119 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2021-01-31 06:32:50,125 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2021-01-31 06:32:50,133 INFO o.a.j.s.SaveService: Loading file: tests/compra/PSWRSV-2021.jmx
+2021-01-31 06:32:50,183 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2021-01-31 06:32:50,194 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-01-31 06:32:50,194 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-01-31 06:32:50,194 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-01-31 06:32:50,194 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-01-31 06:32:50,194 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2021-01-31 06:32:50,195 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2021-01-31 06:32:50,546 INFO o.a.j.e.KeyToolUtils: keytool found at 'keytool'
+2021-01-31 06:32:50,547 INFO o.a.j.p.h.p.ProxyControl: HTTP(S) Test Script Recorder SSL Proxy will use keys that support embedded 3rd party resources in file /opt/apache-jmeter-5.1.1/bin/proxyserver.jks
+2021-01-31 06:32:50,590 INFO o.a.j.JMeter: Creating summariser <summary>
+2021-01-31 06:32:50,606 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
+2021-01-31 06:32:50,606 INFO o.a.j.r.d.ReportGenerator: Will generate report at end of test from  results file: tests/compra/test-plan.jtl
+2021-01-31 06:32:50,606 INFO o.a.j.r.d.ReportGenerator: Reading report generator properties from: /opt/apache-jmeter-5.1.1/bin/reportgenerator.properties
+2021-01-31 06:32:50,606 INFO o.a.j.r.d.ReportGenerator: Merging with JMeter properties
+2021-01-31 06:32:50,612 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.temp_dir' not found, using default value 'temp' instead.
+2021-01-31 06:32:50,616 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.apdex_per_transaction' not found, using default value 'null' instead.
+2021-01-31 06:32:50,616 INFO o.a.j.r.c.ReportGeneratorConfiguration: apdex_per_transaction : {} is empty, not APDEX per transaction customization
+2021-01-31 06:32:50,616 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.sample_filter' not found, using default value 'null' instead.
+2021-01-31 06:32:50,616 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.report_title' not found, using default value 'null' instead.
+2021-01-31 06:32:50,616 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.start_date' not found, using default value 'null' instead.
+2021-01-31 06:32:50,616 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.end_date' not found, using default value 'null' instead.
+2021-01-31 06:32:50,617 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.date_format' not found, using default value 'null' instead.
+2021-01-31 06:32:50,617 INFO o.a.j.r.c.ReportGeneratorConfiguration: Will use date range start date: null, end date: null
+2021-01-31 06:32:50,622 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.totalTPS.exclude_controllers' not found, using default value 'false' instead.
+2021-01-31 06:32:50,622 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.activeThreadsOverTime.exclude_controllers' not found, using default value 'false' instead.
+2021-01-31 06:32:50,623 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.timeVsThreads.exclude_controllers' not found, using default value 'false' instead.
+2021-01-31 06:32:50,623 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimeDistribution.exclude_controllers' not found, using default value 'false' instead.
+2021-01-31 06:32:50,623 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.transactionsPerSecond.exclude_controllers' not found, using default value 'false' instead.
+2021-01-31 06:32:50,623 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentiles.exclude_controllers' not found, using default value 'false' instead.
+2021-01-31 06:32:50,623 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentilesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2021-01-31 06:32:50,624 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2021-01-31 06:32:50,624 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.connectTimeOverTime.exclude_controllers' not found, using default value 'false' instead.
+2021-01-31 06:32:50,624 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.latenciesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2021-01-31 06:32:50,625 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.filters_only_sample_series' not found, using default value 'true' instead.
+2021-01-31 06:32:50,625 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.series_filter' not found, using default value '' instead.
+2021-01-31 06:32:50,625 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.show_controllers_only' not found, using default value 'false' instead.
+2021-01-31 06:32:50,626 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.filters_only_sample_series' not found, using default value 'true' instead.
+2021-01-31 06:32:50,626 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.series_filter' not found, using default value '' instead.
+2021-01-31 06:32:50,626 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.show_controllers_only' not found, using default value 'false' instead.
+2021-01-31 06:32:50,632 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2021-01-31 06:32:50,633 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2021-01-31 06:32:50,633 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2021-01-31 06:32:50,640 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2021-01-31 06:32:50,640 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2021-01-31 06:32:51,078 INFO o.a.j.JMeter: Running test (1612074771078)
+2021-01-31 06:32:51,237 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Grupo de Hilos
+2021-01-31 06:32:51,237 INFO o.a.j.e.StandardJMeterEngine: Starting 200 threads for group Grupo de Hilos.
+2021-01-31 06:32:51,237 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2021-01-31 06:32:51,237 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=200 ramp-up=60 delayedStart=false
+2021-01-31 06:32:51,275 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-1
+2021-01-31 06:32:51,302 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = 9529f2ddeedf
+2021-01-31 06:32:51,310 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2021-01-31 06:32:51,312 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2021-01-31 06:32:51,312 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2021-01-31 06:32:51,312 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2021-01-31 06:32:51,313 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2021-01-31 06:32:51,405 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
+2021-01-31 06:32:51,413 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2021-01-31 06:32:51,413 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2021-01-31 06:32:51,477 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
+2021-01-31 06:32:51,481 INFO o.a.j.u.SSLManager: KeyStore created OK
+2021-01-31 06:32:51,481 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
+2021-01-31 06:32:51,570 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-2
+2021-01-31 06:32:51,878 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-3
+2021-01-31 06:32:52,172 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-4
+2021-01-31 06:32:52,441 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2021-01-31 06:32:52,441 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2021-01-31 06:32:52,476 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-5
+2021-01-31 06:32:52,775 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-6
+2021-01-31 06:32:53,081 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-7
+2021-01-31 06:32:53,373 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-8
+2021-01-31 06:32:53,668 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-9
+2021-01-31 06:32:53,982 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-10
+2021-01-31 06:32:54,273 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-11
+2021-01-31 06:32:54,571 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-12
+2021-01-31 06:32:54,873 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-13
+2021-01-31 06:32:55,176 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-14
+2021-01-31 06:32:55,474 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-15
+2021-01-31 06:32:55,778 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-16
+2021-01-31 06:32:56,078 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-17
+2021-01-31 06:32:56,395 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-18
+2021-01-31 06:32:56,673 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-19
+2021-01-31 06:32:56,975 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-20
+2021-01-31 06:32:57,282 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-21
+2021-01-31 06:32:57,577 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-22
+2021-01-31 06:32:57,880 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-23
+2021-01-31 06:32:58,169 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-24
+2021-01-31 06:32:58,472 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-25
+2021-01-31 06:32:58,769 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-26
+2021-01-31 06:32:59,066 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-27
+2021-01-31 06:32:59,382 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-28
+2021-01-31 06:32:59,678 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-29
+2021-01-31 06:32:59,983 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-30
+2021-01-31 06:33:00,281 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-31
+2021-01-31 06:33:00,579 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-32
+2021-01-31 06:33:00,882 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-33
+2021-01-31 06:33:01,176 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-34
+2021-01-31 06:33:01,476 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-35
+2021-01-31 06:33:01,777 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-36
+2021-01-31 06:33:02,075 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-37
+2021-01-31 06:33:02,392 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-38
+2021-01-31 06:33:02,683 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-39
+2021-01-31 06:33:02,987 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-40
+2021-01-31 06:33:03,280 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-41
+2021-01-31 06:33:03,592 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-42
+2021-01-31 06:33:03,868 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-43
+2021-01-31 06:33:04,175 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-44
+2021-01-31 06:33:04,501 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-45
+2021-01-31 06:33:04,787 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-46
+2021-01-31 06:33:05,085 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-47
+2021-01-31 06:33:05,378 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-48
+2021-01-31 06:33:05,682 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-49
+2021-01-31 06:33:05,981 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-50
+2021-01-31 06:33:06,287 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-51
+2021-01-31 06:33:06,581 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-52
+2021-01-31 06:33:06,874 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-53
+2021-01-31 06:33:07,183 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-54
+2021-01-31 06:33:07,490 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-55
+2021-01-31 06:33:07,767 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-56
+2021-01-31 06:33:08,079 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-57
+2021-01-31 06:33:08,382 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-58
+2021-01-31 06:33:08,684 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-59
+2021-01-31 06:33:08,980 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-60
+2021-01-31 06:33:09,280 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-61
+2021-01-31 06:33:09,581 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-62
+2021-01-31 06:33:09,883 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-63
+2021-01-31 06:33:10,180 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-64
+2021-01-31 06:33:10,481 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-65
+2021-01-31 06:33:10,786 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-66
+2021-01-31 06:33:11,089 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-67
+2021-01-31 06:33:11,384 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-68
+2021-01-31 06:33:11,686 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-69
+2021-01-31 06:33:11,984 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-70
+2021-01-31 06:33:12,286 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-71
+2021-01-31 06:33:12,587 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-72
+2021-01-31 06:33:12,898 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-73
+2021-01-31 06:33:13,190 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-74
+2021-01-31 06:33:13,484 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-75
+2021-01-31 06:33:13,786 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-76
+2021-01-31 06:33:14,083 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-77
+2021-01-31 06:33:14,394 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-78
+2021-01-31 06:33:14,680 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-79
+2021-01-31 06:33:14,990 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-80
+2021-01-31 06:33:15,277 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-81
+2021-01-31 06:33:15,566 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-82
+2021-01-31 06:33:15,863 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-83
+2021-01-31 06:33:16,166 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-84
+2021-01-31 06:33:16,453 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-85
+2021-01-31 06:33:16,755 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-86
+2021-01-31 06:33:17,052 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-87
+2021-01-31 06:33:17,352 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-88
+2021-01-31 06:33:17,652 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-89
+2021-01-31 06:33:17,952 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-90
+2021-01-31 06:33:18,253 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-91
+2021-01-31 06:33:18,552 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-92
+2021-01-31 06:33:18,852 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-93
+2021-01-31 06:33:19,152 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-94
+2021-01-31 06:33:19,453 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-95
+2021-01-31 06:33:19,752 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-96
+2021-01-31 06:33:20,052 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-97
+2021-01-31 06:33:20,353 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-98
+2021-01-31 06:33:20,652 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-99
+2021-01-31 06:33:20,952 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-100
+2021-01-31 06:33:21,253 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-101
+2021-01-31 06:33:21,553 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-102
+2021-01-31 06:33:21,853 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-103
+2021-01-31 06:33:22,154 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-104
+2021-01-31 06:33:22,452 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-105
+2021-01-31 06:33:22,752 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-106
+2021-01-31 06:33:23,052 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-107
+2021-01-31 06:33:23,352 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-108
+2021-01-31 06:33:23,652 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-109
+2021-01-31 06:33:23,952 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-110
+2021-01-31 06:33:24,253 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-111
+2021-01-31 06:33:24,552 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-112
+2021-01-31 06:33:24,852 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-113
+2021-01-31 06:33:25,152 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-114
+2021-01-31 06:33:25,452 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-115
+2021-01-31 06:33:25,752 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-116
+2021-01-31 06:33:26,052 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-117
+2021-01-31 06:33:26,352 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-118
+2021-01-31 06:33:26,652 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-119
+2021-01-31 06:33:26,952 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-120
+2021-01-31 06:33:27,252 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-121
+2021-01-31 06:33:27,552 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-122
+2021-01-31 06:33:27,852 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-123
+2021-01-31 06:33:28,153 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-124
+2021-01-31 06:33:28,452 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-125
+2021-01-31 06:33:28,753 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-126
+2021-01-31 06:33:29,052 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-127
+2021-01-31 06:33:29,352 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-128
+2021-01-31 06:33:29,652 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-129
+2021-01-31 06:33:29,953 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-130
+2021-01-31 06:33:30,252 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-131
+2021-01-31 06:33:30,553 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-132
+2021-01-31 06:33:30,852 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-133
+2021-01-31 06:33:31,153 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-134
+2021-01-31 06:33:31,452 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-135
+2021-01-31 06:33:31,753 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-136
+2021-01-31 06:33:32,052 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-137
+2021-01-31 06:33:32,352 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-138
+2021-01-31 06:33:32,652 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-139
+2021-01-31 06:33:32,952 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-140
+2021-01-31 06:33:33,252 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-141
+2021-01-31 06:33:33,552 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-142
+2021-01-31 06:33:33,853 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-143
+2021-01-31 06:33:34,153 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-144
+2021-01-31 06:33:34,454 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-145
+2021-01-31 06:33:34,753 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-146
+2021-01-31 06:33:35,054 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-147
+2021-01-31 06:33:35,352 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-148
+2021-01-31 06:33:35,654 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-149
+2021-01-31 06:33:35,952 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-150
+2021-01-31 06:33:36,252 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-151
+2021-01-31 06:33:36,554 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-152
+2021-01-31 06:33:36,852 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-153
+2021-01-31 06:33:37,153 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-154
+2021-01-31 06:33:37,452 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-155
+2021-01-31 06:33:37,752 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-156
+2021-01-31 06:33:38,052 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-157
+2021-01-31 06:33:38,352 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-158
+2021-01-31 06:33:38,651 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-159
+2021-01-31 06:33:38,952 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-160
+2021-01-31 06:33:39,253 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-161
+2021-01-31 06:33:39,552 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-162
+2021-01-31 06:33:39,853 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-163
+2021-01-31 06:33:40,152 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-164
+2021-01-31 06:33:40,453 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-165
+2021-01-31 06:33:40,752 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-166
+2021-01-31 06:33:41,052 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-167
+2021-01-31 06:33:41,352 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-168
+2021-01-31 06:33:41,652 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-169
+2021-01-31 06:33:41,952 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-170
+2021-01-31 06:33:42,252 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-171
+2021-01-31 06:33:42,552 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-172
+2021-01-31 06:33:42,852 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-173
+2021-01-31 06:33:43,153 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-174
+2021-01-31 06:33:43,452 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-175
+2021-01-31 06:33:43,753 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-176
+2021-01-31 06:33:44,052 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-177
+2021-01-31 06:33:44,353 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-178
+2021-01-31 06:33:44,652 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-179
+2021-01-31 06:33:44,952 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-180
+2021-01-31 06:33:45,252 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-181
+2021-01-31 06:33:45,553 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-182
+2021-01-31 06:33:45,852 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-183
+2021-01-31 06:33:46,153 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-184
+2021-01-31 06:33:46,452 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-185
+2021-01-31 06:33:46,752 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-186
+2021-01-31 06:33:47,052 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-187
+2021-01-31 06:33:47,352 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-188
+2021-01-31 06:33:47,654 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-189
+2021-01-31 06:33:47,952 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-190
+2021-01-31 06:33:48,252 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-191
+2021-01-31 06:33:48,552 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-192
+2021-01-31 06:33:48,852 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-193
+2021-01-31 06:33:49,153 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-194
+2021-01-31 06:33:49,453 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-195
+2021-01-31 06:33:49,752 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-196
+2021-01-31 06:33:50,052 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-197
+2021-01-31 06:33:50,352 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-198
+2021-01-31 06:33:50,653 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-199
+2021-01-31 06:33:50,952 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-200
+2021-01-31 06:34:30,004 INFO o.a.j.r.Summariser: summary +   7383 in 00:01:39 =   74.6/s Avg:  1070 Min:     2 Max: 86674 Err:     0 (0.00%) Active: 200 Started: 200 Finished: 0
+2021-01-31 06:35:00,007 INFO o.a.j.r.Summariser: summary +   6796 in 00:00:30 =  226.5/s Avg:   582 Min:     1 Max: 123626 Err:    50 (0.74%) Active: 200 Started: 200 Finished: 0
+2021-01-31 06:35:00,007 INFO o.a.j.r.Summariser: summary =  14179 in 00:02:09 =  110.0/s Avg:   836 Min:     1 Max: 123626 Err:    50 (0.35%)
+2021-01-31 06:35:30,019 INFO o.a.j.r.Summariser: summary +   7062 in 00:00:30 =  235.3/s Avg:  1100 Min:     1 Max: 136404 Err:     8 (0.11%) Active: 200 Started: 200 Finished: 0
+2021-01-31 06:35:30,019 INFO o.a.j.r.Summariser: summary =  21241 in 00:02:39 =  133.6/s Avg:   924 Min:     1 Max: 136404 Err:    58 (0.27%)
+2021-01-31 06:36:00,002 INFO o.a.j.r.Summariser: summary +   6579 in 00:00:30 =  219.4/s Avg:  1408 Min:     1 Max: 145586 Err:    40 (0.61%) Active: 200 Started: 200 Finished: 0
+2021-01-31 06:36:00,002 INFO o.a.j.r.Summariser: summary =  27820 in 00:03:09 =  147.3/s Avg:  1038 Min:     1 Max: 145586 Err:    98 (0.35%)
+2021-01-31 06:36:30,012 INFO o.a.j.r.Summariser: summary +   5062 in 00:00:30 =  168.7/s Avg:   765 Min:     1 Max: 135575 Err:    87 (1.72%) Active: 200 Started: 200 Finished: 0
+2021-01-31 06:36:30,012 INFO o.a.j.r.Summariser: summary =  32882 in 00:03:39 =  150.2/s Avg:   996 Min:     1 Max: 145586 Err:   185 (0.56%)
+2021-01-31 06:37:01,565 INFO o.a.j.r.Summariser: summary +    123 in 00:00:32 =    3.9/s Avg:  8106 Min:     2 Max: 94154 Err:     5 (4.07%) Active: 200 Started: 200 Finished: 0
+2021-01-31 06:37:01,566 INFO o.a.j.r.Summariser: summary =  33005 in 00:04:10 =  131.8/s Avg:  1023 Min:     1 Max: 145586 Err:   190 (0.58%)
+2021-01-31 06:37:30,499 INFO o.a.j.r.Summariser: summary +    287 in 00:00:29 =    9.9/s Avg:  6724 Min:     1 Max: 240545 Err:     7 (2.44%) Active: 200 Started: 200 Finished: 0
+2021-01-31 06:37:30,500 INFO o.a.j.r.Summariser: summary =  33292 in 00:04:39 =  119.1/s Avg:  1072 Min:     1 Max: 240545 Err:   197 (0.59%)
+2021-01-31 06:38:00,094 INFO o.a.j.r.Summariser: summary +    366 in 00:00:30 =   12.4/s Avg:  4505 Min:     1 Max: 240379 Err:     8 (2.19%) Active: 200 Started: 200 Finished: 0
+2021-01-31 06:38:00,094 INFO o.a.j.r.Summariser: summary =  33658 in 00:05:09 =  108.9/s Avg:  1109 Min:     1 Max: 240545 Err:   205 (0.61%)
+2021-01-31 06:38:30,242 INFO o.a.j.r.Summariser: summary +   3176 in 00:00:30 =  105.3/s Avg:  3168 Min:     1 Max: 154837 Err:    14 (0.44%) Active: 200 Started: 200 Finished: 0
+2021-01-31 06:38:30,243 INFO o.a.j.r.Summariser: summary =  36834 in 00:05:39 =  108.6/s Avg:  1287 Min:     1 Max: 240545 Err:   219 (0.59%)
+2021-01-31 06:39:00,008 INFO o.a.j.r.Summariser: summary +   7987 in 00:00:30 =  268.3/s Avg:  1890 Min:     1 Max: 190511 Err:    29 (0.36%) Active: 200 Started: 200 Finished: 0
+2021-01-31 06:39:00,009 INFO o.a.j.r.Summariser: summary =  44821 in 00:06:09 =  121.5/s Avg:  1394 Min:     1 Max: 240545 Err:   248 (0.55%)
+2021-01-31 06:39:30,001 INFO o.a.j.r.Summariser: summary +   5140 in 00:00:30 =  171.4/s Avg:   780 Min:     1 Max: 224852 Err:    29 (0.56%) Active: 200 Started: 200 Finished: 0
+2021-01-31 06:39:30,001 INFO o.a.j.r.Summariser: summary =  49961 in 00:06:39 =  125.2/s Avg:  1331 Min:     1 Max: 240545 Err:   277 (0.55%)
+2021-01-31 06:40:00,000 INFO o.a.j.r.Summariser: summary +   8202 in 00:00:30 =  273.4/s Avg:   837 Min:     1 Max: 240233 Err:    66 (0.80%) Active: 200 Started: 200 Finished: 0
+2021-01-31 06:40:00,000 INFO o.a.j.r.Summariser: summary =  58163 in 00:07:09 =  135.6/s Avg:  1262 Min:     1 Max: 240545 Err:   343 (0.59%)
+2021-01-31 06:40:30,024 INFO o.a.j.r.Summariser: summary +   7592 in 00:00:30 =  252.9/s Avg:   952 Min:     1 Max: 252615 Err:    79 (1.04%) Active: 200 Started: 200 Finished: 0
+2021-01-31 06:40:30,024 INFO o.a.j.r.Summariser: summary =  65755 in 00:07:39 =  143.3/s Avg:  1226 Min:     1 Max: 252615 Err:   422 (0.64%)
+2021-01-31 06:41:00,002 INFO o.a.j.r.Summariser: summary +   4527 in 00:00:30 =  151.0/s Avg:   956 Min:     1 Max: 276492 Err:    81 (1.79%) Active: 200 Started: 200 Finished: 0
+2021-01-31 06:41:00,002 INFO o.a.j.r.Summariser: summary =  70282 in 00:08:09 =  143.7/s Avg:  1208 Min:     1 Max: 276492 Err:   503 (0.72%)
