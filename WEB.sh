@@ -6,10 +6,10 @@
 # These will be substituted in JMX test script
 # See also: http://stackoverflow.com/questions/14317715/jmeter-changing-user-defined-variables-from-command-line
 
-export TARGET_TOKEN="d1d0449b0b49602116181f17e9e36e158ecc4286da"
-export TARGET_THREADS="1"
+export TARGET_TOKEN="2940a35b7b6da4cb6a21804adc57147f8ecc4286da"
+export TARGET_THREADS="3"
 export TARGET_LOOPS="1"
-export TARGET_TIME="1"
+export TARGET_TIME="60"
 
 T_DIR=tests/compra
 
