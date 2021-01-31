@@ -7,7 +7,7 @@
 # See also: http://stackoverflow.com/questions/14317715/jmeter-changing-user-defined-variables-from-command-line
 
 
-export TARGET_THREADS="1"
+export TARGET_THREADS="3"
 export TARGET_LOOPS="1"
 export TARGET_TIME="1"
 
