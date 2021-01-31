@@ -1,690 +1,563 @@
-2021-01-31 07:39:08,273 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
-2021-01-31 07:39:08,295 INFO o.a.j.JMeter: Loading user properties from: /opt/apache-jmeter-5.1.1/bin/user.properties
-2021-01-31 07:39:08,296 INFO o.a.j.JMeter: Loading system properties from: /opt/apache-jmeter-5.1.1/bin/system.properties
-2021-01-31 07:39:08,296 INFO o.a.j.JMeter: Setting System property: log_level.jmeter=DEBUG
-2021-01-31 07:39:08,296 INFO o.a.j.JMeter: Setting JMeter property: TARGET_THREADS=250
-2021-01-31 07:39:08,296 INFO o.a.j.JMeter: Setting JMeter property: TARGET_TOKEN=7004ded24f43a4450968747fa79f06de8ecc4286da
-2021-01-31 07:39:08,296 INFO o.a.j.JMeter: Setting JMeter property: TARGET_TIME=60
-2021-01-31 07:39:08,296 INFO o.a.j.JMeter: Setting JMeter property: TARGET_LOOPS=2
-2021-01-31 07:39:08,302 INFO o.a.j.JMeter: Copyright (c) 1998-2019 The Apache Software Foundation
-2021-01-31 07:39:08,302 INFO o.a.j.JMeter: Version 5.1.1 r1855137
-2021-01-31 07:39:08,302 INFO o.a.j.JMeter: java.version=1.8.0_222
-2021-01-31 07:39:08,303 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
-2021-01-31 07:39:08,303 INFO o.a.j.JMeter: os.name=Linux
-2021-01-31 07:39:08,303 INFO o.a.j.JMeter: os.arch=amd64
-2021-01-31 07:39:08,303 INFO o.a.j.JMeter: os.version=5.4.0-1037-aws
-2021-01-31 07:39:08,303 INFO o.a.j.JMeter: file.encoding=UTF-8
-2021-01-31 07:39:08,303 INFO o.a.j.JMeter: java.awt.headless=true
-2021-01-31 07:39:08,303 INFO o.a.j.JMeter: Max memory     =25585254400
-2021-01-31 07:39:08,303 INFO o.a.j.JMeter: Available Processors =8
-2021-01-31 07:39:08,309 INFO o.a.j.JMeter: Default Locale=English (EN)
-2021-01-31 07:39:08,309 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
-2021-01-31 07:39:08,309 INFO o.a.j.JMeter: JMeterHome=/opt/apache-jmeter-5.1.1
-2021-01-31 07:39:08,309 INFO o.a.j.JMeter: user.dir  =/home/ubuntu/jmeter
-2021-01-31 07:39:08,310 INFO o.a.j.JMeter: PWD       =/home/ubuntu/jmeter
-2021-01-31 07:39:08,310 INFO o.a.j.JMeter: IP: 172.17.0.2 Name: 450646aee3e4 FullName: 450646aee3e4
-2021-01-31 07:39:08,313 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'/home/ubuntu/jmeter/tests/compra2/report-2021-01-31-07-39'
-2021-01-31 07:39:08,315 INFO o.a.j.s.FileServer: Default base='/home/ubuntu/jmeter'
-2021-01-31 07:39:08,322 INFO o.a.j.s.FileServer: Set new base='/home/ubuntu/jmeter/tests/compra2'
-2021-01-31 07:39:08,492 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
-2021-01-31 07:39:08,510 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
-2021-01-31 07:39:08,516 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
-2021-01-31 07:39:08,524 INFO o.a.j.s.SaveService: Loading file: tests/compra2/PSWRSV-2021.jmx
-2021-01-31 07:39:08,574 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
-2021-01-31 07:39:08,585 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2021-01-31 07:39:08,586 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2021-01-31 07:39:08,586 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2021-01-31 07:39:08,586 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2021-01-31 07:39:08,586 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
-2021-01-31 07:39:08,586 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
-2021-01-31 07:39:08,942 INFO o.a.j.e.KeyToolUtils: keytool found at 'keytool'
-2021-01-31 07:39:08,942 INFO o.a.j.p.h.p.ProxyControl: HTTP(S) Test Script Recorder SSL Proxy will use keys that support embedded 3rd party resources in file /opt/apache-jmeter-5.1.1/bin/proxyserver.jks
-2021-01-31 07:39:08,985 INFO o.a.j.JMeter: Creating summariser <summary>
-2021-01-31 07:39:09,000 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
-2021-01-31 07:39:09,000 INFO o.a.j.r.d.ReportGenerator: Will generate report at end of test from  results file: tests/compra2/test-plan.jtl
-2021-01-31 07:39:09,000 INFO o.a.j.r.d.ReportGenerator: Reading report generator properties from: /opt/apache-jmeter-5.1.1/bin/reportgenerator.properties
-2021-01-31 07:39:09,001 INFO o.a.j.r.d.ReportGenerator: Merging with JMeter properties
-2021-01-31 07:39:09,007 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.temp_dir' not found, using default value 'temp' instead.
-2021-01-31 07:39:09,010 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.apdex_per_transaction' not found, using default value 'null' instead.
-2021-01-31 07:39:09,011 INFO o.a.j.r.c.ReportGeneratorConfiguration: apdex_per_transaction : {} is empty, not APDEX per transaction customization
-2021-01-31 07:39:09,011 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.sample_filter' not found, using default value 'null' instead.
-2021-01-31 07:39:09,011 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.report_title' not found, using default value 'null' instead.
-2021-01-31 07:39:09,011 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.start_date' not found, using default value 'null' instead.
-2021-01-31 07:39:09,011 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.end_date' not found, using default value 'null' instead.
-2021-01-31 07:39:09,011 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.date_format' not found, using default value 'null' instead.
-2021-01-31 07:39:09,012 INFO o.a.j.r.c.ReportGeneratorConfiguration: Will use date range start date: null, end date: null
-2021-01-31 07:39:09,017 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.totalTPS.exclude_controllers' not found, using default value 'false' instead.
-2021-01-31 07:39:09,017 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.activeThreadsOverTime.exclude_controllers' not found, using default value 'false' instead.
-2021-01-31 07:39:09,017 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.timeVsThreads.exclude_controllers' not found, using default value 'false' instead.
-2021-01-31 07:39:09,017 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimeDistribution.exclude_controllers' not found, using default value 'false' instead.
-2021-01-31 07:39:09,018 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.transactionsPerSecond.exclude_controllers' not found, using default value 'false' instead.
-2021-01-31 07:39:09,018 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentiles.exclude_controllers' not found, using default value 'false' instead.
-2021-01-31 07:39:09,018 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentilesOverTime.exclude_controllers' not found, using default value 'false' instead.
-2021-01-31 07:39:09,018 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimesOverTime.exclude_controllers' not found, using default value 'false' instead.
-2021-01-31 07:39:09,018 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.connectTimeOverTime.exclude_controllers' not found, using default value 'false' instead.
-2021-01-31 07:39:09,019 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.latenciesOverTime.exclude_controllers' not found, using default value 'false' instead.
-2021-01-31 07:39:09,020 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.filters_only_sample_series' not found, using default value 'true' instead.
-2021-01-31 07:39:09,020 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.series_filter' not found, using default value '' instead.
-2021-01-31 07:39:09,020 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.show_controllers_only' not found, using default value 'false' instead.
-2021-01-31 07:39:09,020 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.filters_only_sample_series' not found, using default value 'true' instead.
-2021-01-31 07:39:09,021 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.series_filter' not found, using default value '' instead.
-2021-01-31 07:39:09,021 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.show_controllers_only' not found, using default value 'false' instead.
-2021-01-31 07:39:09,026 INFO o.a.j.e.StandardJMeterEngine: Running the test!
-2021-01-31 07:39:09,027 INFO o.a.j.s.SampleEvent: List of sample_variables: []
-2021-01-31 07:39:09,027 INFO o.a.j.s.SampleEvent: List of sample_variables: []
-2021-01-31 07:39:09,034 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
-2021-01-31 07:39:09,034 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
-2021-01-31 07:39:09,470 INFO o.a.j.JMeter: Running test (1612078749470)
-2021-01-31 07:39:09,660 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Grupo de Hilos
-2021-01-31 07:39:09,661 INFO o.a.j.e.StandardJMeterEngine: Starting 250 threads for group Grupo de Hilos.
-2021-01-31 07:39:09,661 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
-2021-01-31 07:39:09,661 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=250 ramp-up=60 delayedStart=false
-2021-01-31 07:39:09,699 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-1
-2021-01-31 07:39:09,729 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = 450646aee3e4
-2021-01-31 07:39:09,735 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
-2021-01-31 07:39:09,737 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
-2021-01-31 07:39:09,738 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
-2021-01-31 07:39:09,738 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
-2021-01-31 07:39:09,738 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
-2021-01-31 07:39:09,834 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
-2021-01-31 07:39:09,842 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
-2021-01-31 07:39:09,842 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
-2021-01-31 07:39:09,903 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
-2021-01-31 07:39:09,907 INFO o.a.j.u.SSLManager: KeyStore created OK
-2021-01-31 07:39:09,907 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
-2021-01-31 07:39:09,936 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-2
-2021-01-31 07:39:10,179 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-3
-2021-01-31 07:39:10,416 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-4
-2021-01-31 07:39:10,670 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-5
-2021-01-31 07:39:10,897 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-6
-2021-01-31 07:39:10,993 INFO o.a.j.t.ThreadGroup: Started thread group number 1
-2021-01-31 07:39:10,993 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
-2021-01-31 07:39:11,144 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-7
-2021-01-31 07:39:11,378 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-8
-2021-01-31 07:39:11,614 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-9
-2021-01-31 07:39:11,857 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-10
-2021-01-31 07:39:12,098 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-11
-2021-01-31 07:39:12,338 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-12
-2021-01-31 07:39:12,579 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-13
-2021-01-31 07:39:12,824 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-14
-2021-01-31 07:39:13,063 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-15
-2021-01-31 07:39:13,302 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-16
-2021-01-31 07:39:13,541 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-17
-2021-01-31 07:39:13,785 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-18
-2021-01-31 07:39:14,028 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-19
-2021-01-31 07:39:14,271 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-20
-2021-01-31 07:39:14,496 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-21
-2021-01-31 07:39:14,748 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-22
-2021-01-31 07:39:14,992 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-23
-2021-01-31 07:39:15,218 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-24
-2021-01-31 07:39:15,467 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-25
-2021-01-31 07:39:15,699 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-26
-2021-01-31 07:39:15,939 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-27
-2021-01-31 07:39:16,177 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-28
-2021-01-31 07:39:16,420 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-29
-2021-01-31 07:39:16,665 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-30
-2021-01-31 07:39:16,921 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-31
-2021-01-31 07:39:17,135 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-32
-2021-01-31 07:39:17,374 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-33
-2021-01-31 07:39:17,626 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-34
-2021-01-31 07:39:17,862 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-35
-2021-01-31 07:39:18,102 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-36
-2021-01-31 07:39:18,354 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-37
-2021-01-31 07:39:18,582 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-38
-2021-01-31 07:39:18,822 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-39
-2021-01-31 07:39:19,067 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-40
-2021-01-31 07:39:19,305 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-41
-2021-01-31 07:39:19,543 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-42
-2021-01-31 07:39:19,780 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-43
-2021-01-31 07:39:20,025 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-44
-2021-01-31 07:39:20,252 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-45
-2021-01-31 07:39:20,497 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-46
-2021-01-31 07:39:20,748 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-47
-2021-01-31 07:39:20,979 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-48
-2021-01-31 07:39:21,221 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-49
-2021-01-31 07:39:21,460 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-50
-2021-01-31 07:39:21,698 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-51
-2021-01-31 07:39:21,940 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-52
-2021-01-31 07:39:22,191 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-53
-2021-01-31 07:39:22,421 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-54
-2021-01-31 07:39:22,661 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-55
-2021-01-31 07:39:22,903 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-56
-2021-01-31 07:39:23,143 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-57
-2021-01-31 07:39:23,387 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-58
-2021-01-31 07:39:23,624 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-59
-2021-01-31 07:39:23,861 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-60
-2021-01-31 07:39:24,099 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-61
-2021-01-31 07:39:24,333 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-62
-2021-01-31 07:39:24,570 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-63
-2021-01-31 07:39:24,805 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-64
-2021-01-31 07:39:25,044 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-65
-2021-01-31 07:39:25,275 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-66
-2021-01-31 07:39:25,516 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-67
-2021-01-31 07:39:25,763 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-68
-2021-01-31 07:39:25,997 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-69
-2021-01-31 07:39:26,239 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-70
-2021-01-31 07:39:26,477 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-71
-2021-01-31 07:39:26,716 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-72
-2021-01-31 07:39:26,962 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-73
-2021-01-31 07:39:27,195 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-74
-2021-01-31 07:39:27,441 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-75
-2021-01-31 07:39:27,682 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-76
-2021-01-31 07:39:27,919 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-77
-2021-01-31 07:39:28,156 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-78
-2021-01-31 07:39:28,395 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-79
-2021-01-31 07:39:28,635 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-80
-2021-01-31 07:39:28,874 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-81
-2021-01-31 07:39:29,116 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-82
-2021-01-31 07:39:29,356 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-83
-2021-01-31 07:39:29,598 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-84
-2021-01-31 07:39:29,835 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-85
-2021-01-31 07:39:30,009 INFO o.a.j.r.Summariser: summary +   4648 in 00:00:21 =  226.3/s Avg:    73 Min:     2 Max:  9868 Err:     0 (0.00%) Active: 85 Started: 85 Finished: 0
-2021-01-31 07:39:30,076 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-86
-2021-01-31 07:39:30,315 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-87
-2021-01-31 07:39:30,555 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-88
-2021-01-31 07:39:30,796 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-89
-2021-01-31 07:39:31,034 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-90
-2021-01-31 07:39:31,275 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-91
-2021-01-31 07:39:31,515 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-92
-2021-01-31 07:39:31,755 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-93
-2021-01-31 07:39:31,995 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-94
-2021-01-31 07:39:32,235 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-95
-2021-01-31 07:39:32,475 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-96
-2021-01-31 07:39:32,714 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-97
-2021-01-31 07:39:32,957 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-98
-2021-01-31 07:39:33,196 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-99
-2021-01-31 07:39:33,435 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-100
-2021-01-31 07:39:33,675 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-101
-2021-01-31 07:39:33,915 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-102
-2021-01-31 07:39:34,155 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-103
-2021-01-31 07:39:34,394 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-104
-2021-01-31 07:39:34,635 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-105
-2021-01-31 07:39:34,875 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-106
-2021-01-31 07:39:35,114 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-107
-2021-01-31 07:39:35,356 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-108
-2021-01-31 07:39:35,595 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-109
-2021-01-31 07:39:35,835 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-110
-2021-01-31 07:39:36,075 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-111
-2021-01-31 07:39:36,316 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-112
-2021-01-31 07:39:36,555 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-113
-2021-01-31 07:39:36,796 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-114
-2021-01-31 07:39:37,034 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-115
-2021-01-31 07:39:37,275 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-116
-2021-01-31 07:39:37,516 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-117
-2021-01-31 07:39:37,755 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-118
-2021-01-31 07:39:37,996 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-119
-2021-01-31 07:39:38,236 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-120
-2021-01-31 07:39:38,476 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-121
-2021-01-31 07:39:38,715 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-122
-2021-01-31 07:39:38,955 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-123
-2021-01-31 07:39:39,194 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-124
-2021-01-31 07:39:39,435 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-125
-2021-01-31 07:39:39,674 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-126
-2021-01-31 07:39:39,915 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-127
-2021-01-31 07:39:40,155 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-128
-2021-01-31 07:39:40,394 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-129
-2021-01-31 07:39:40,636 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-130
-2021-01-31 07:39:40,876 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-131
-2021-01-31 07:39:41,115 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-132
-2021-01-31 07:39:41,355 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-133
-2021-01-31 07:39:41,595 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-134
-2021-01-31 07:39:41,834 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-135
-2021-01-31 07:39:42,075 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-136
-2021-01-31 07:39:42,315 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-137
-2021-01-31 07:39:42,555 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-138
-2021-01-31 07:39:42,795 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-139
-2021-01-31 07:39:43,035 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-140
-2021-01-31 07:39:43,275 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-141
-2021-01-31 07:39:43,514 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-142
-2021-01-31 07:39:43,755 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-143
-2021-01-31 07:39:43,995 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-144
-2021-01-31 07:39:44,235 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-145
-2021-01-31 07:39:44,475 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-146
-2021-01-31 07:39:44,715 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-147
-2021-01-31 07:39:44,955 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-148
-2021-01-31 07:39:45,194 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-149
-2021-01-31 07:39:45,435 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-150
-2021-01-31 07:39:45,675 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-151
-2021-01-31 07:39:45,915 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-152
-2021-01-31 07:39:46,155 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-153
-2021-01-31 07:39:46,395 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-154
-2021-01-31 07:39:46,635 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-155
-2021-01-31 07:39:46,874 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-156
-2021-01-31 07:39:47,116 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-157
-2021-01-31 07:39:47,355 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-158
-2021-01-31 07:39:47,594 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-159
-2021-01-31 07:39:47,835 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-160
-2021-01-31 07:39:48,075 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-161
-2021-01-31 07:39:48,315 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-162
-2021-01-31 07:39:48,555 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-163
-2021-01-31 07:39:48,796 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-164
-2021-01-31 07:39:49,035 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-165
-2021-01-31 07:39:49,275 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-166
-2021-01-31 07:39:49,514 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-167
-2021-01-31 07:39:49,755 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-168
-2021-01-31 07:39:49,995 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-169
-2021-01-31 07:39:50,236 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-170
-2021-01-31 07:39:50,476 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-171
-2021-01-31 07:39:50,714 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-172
-2021-01-31 07:39:50,955 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-173
-2021-01-31 07:39:51,196 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-174
-2021-01-31 07:39:51,434 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-175
-2021-01-31 07:39:51,675 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-176
-2021-01-31 07:39:51,915 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-177
-2021-01-31 07:39:52,155 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-178
-2021-01-31 07:39:52,396 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-179
-2021-01-31 07:39:52,635 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-180
-2021-01-31 07:39:52,875 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-181
-2021-01-31 07:39:53,115 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-182
-2021-01-31 07:39:53,355 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-183
-2021-01-31 07:39:53,594 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-184
-2021-01-31 07:39:53,835 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-185
-2021-01-31 07:39:54,075 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-186
-2021-01-31 07:39:54,315 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-187
-2021-01-31 07:39:54,555 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-188
-2021-01-31 07:39:54,796 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-189
-2021-01-31 07:39:55,034 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-190
-2021-01-31 07:39:55,275 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-191
-2021-01-31 07:39:55,515 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-192
-2021-01-31 07:39:55,755 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-193
-2021-01-31 07:39:55,995 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-194
-2021-01-31 07:39:56,235 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-195
-2021-01-31 07:39:56,475 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-196
-2021-01-31 07:39:56,716 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-197
-2021-01-31 07:39:56,956 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-198
-2021-01-31 07:39:57,195 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-199
-2021-01-31 07:39:57,435 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-200
-2021-01-31 07:39:57,675 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-201
-2021-01-31 07:39:57,915 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-202
-2021-01-31 07:39:58,155 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-203
-2021-01-31 07:39:58,396 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-204
-2021-01-31 07:39:58,634 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-205
-2021-01-31 07:39:58,875 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-206
-2021-01-31 07:39:59,116 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-207
-2021-01-31 07:39:59,354 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-208
-2021-01-31 07:39:59,596 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-209
-2021-01-31 07:39:59,836 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-210
-2021-01-31 07:40:00,013 INFO o.a.j.r.Summariser: summary +   7871 in 00:00:30 =  262.3/s Avg:   222 Min:     1 Max: 45202 Err:    11 (0.14%) Active: 210 Started: 210 Finished: 0
-2021-01-31 07:40:00,013 INFO o.a.j.r.Summariser: summary =  12519 in 00:00:51 =  247.7/s Avg:   167 Min:     1 Max: 45202 Err:    11 (0.09%)
-2021-01-31 07:40:00,074 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-211
-2021-01-31 07:40:00,315 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-212
-2021-01-31 07:40:00,556 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-213
-2021-01-31 07:40:00,794 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-214
-2021-01-31 07:40:01,034 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-215
-2021-01-31 07:40:01,275 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-216
-2021-01-31 07:40:01,515 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-217
-2021-01-31 07:40:01,756 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-218
-2021-01-31 07:40:01,995 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-219
-2021-01-31 07:40:02,236 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-220
-2021-01-31 07:40:02,475 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-221
-2021-01-31 07:40:02,715 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-222
-2021-01-31 07:40:02,955 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-223
-2021-01-31 07:40:03,196 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-224
-2021-01-31 07:40:03,435 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-225
-2021-01-31 07:40:03,676 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-226
-2021-01-31 07:40:03,915 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-227
-2021-01-31 07:40:04,156 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-228
-2021-01-31 07:40:04,394 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-229
-2021-01-31 07:40:04,635 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-230
-2021-01-31 07:40:04,876 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-231
-2021-01-31 07:40:05,115 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-232
-2021-01-31 07:40:05,355 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-233
-2021-01-31 07:40:05,595 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-234
-2021-01-31 07:40:05,834 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-235
-2021-01-31 07:40:06,076 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-236
-2021-01-31 07:40:06,315 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-237
-2021-01-31 07:40:06,554 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-238
-2021-01-31 07:40:06,796 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-239
-2021-01-31 07:40:07,035 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-240
-2021-01-31 07:40:07,274 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-241
-2021-01-31 07:40:07,515 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-242
-2021-01-31 07:40:07,755 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-243
-2021-01-31 07:40:07,995 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-244
-2021-01-31 07:40:08,235 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-245
-2021-01-31 07:40:08,475 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-246
-2021-01-31 07:40:08,979 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-248
-2021-01-31 07:40:08,984 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-247
-2021-01-31 07:40:09,195 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-249
-2021-01-31 07:40:09,435 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-250
-2021-01-31 07:40:30,001 INFO o.a.j.r.Summariser: summary +   5414 in 00:00:30 =  180.5/s Avg:   641 Min:     1 Max: 66988 Err:     8 (0.15%) Active: 250 Started: 250 Finished: 0
-2021-01-31 07:40:30,001 INFO o.a.j.r.Summariser: summary =  17933 in 00:01:21 =  222.7/s Avg:   310 Min:     1 Max: 66988 Err:    19 (0.11%)
-2021-01-31 07:40:30,671 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-4
-2021-01-31 07:40:30,671 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-4
-2021-01-31 07:40:51,151 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-3
-2021-01-31 07:40:51,151 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-3
-2021-01-31 07:41:00,002 INFO o.a.j.r.Summariser: summary +   4072 in 00:00:30 =  135.7/s Avg:  1392 Min:     1 Max: 103495 Err:    12 (0.29%) Active: 248 Started: 250 Finished: 2
-2021-01-31 07:41:00,002 INFO o.a.j.r.Summariser: summary =  22005 in 00:01:51 =  199.1/s Avg:   510 Min:     1 Max: 103495 Err:    31 (0.14%)
-2021-01-31 07:41:07,308 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-2
-2021-01-31 07:41:07,308 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-2
-2021-01-31 07:41:08,864 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-79
-2021-01-31 07:41:08,864 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-79
-2021-01-31 07:41:30,107 INFO o.a.j.r.Summariser: summary +   3874 in 00:00:30 =  128.7/s Avg:  1739 Min:     1 Max: 127999 Err:    21 (0.54%) Active: 246 Started: 250 Finished: 4
-2021-01-31 07:41:30,107 INFO o.a.j.r.Summariser: summary =  25879 in 00:02:21 =  184.0/s Avg:   694 Min:     1 Max: 127999 Err:    52 (0.20%)
-2021-01-31 07:41:33,491 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-51
-2021-01-31 07:41:33,492 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-51
-2021-01-31 07:41:33,962 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-17
-2021-01-31 07:41:33,962 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-17
-2021-01-31 07:41:40,604 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-16
-2021-01-31 07:41:40,604 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-16
-2021-01-31 07:42:00,000 INFO o.a.j.r.Summariser: summary +   3812 in 00:00:30 =  127.5/s Avg:  1908 Min:     1 Max: 128773 Err:    25 (0.66%) Active: 243 Started: 250 Finished: 7
-2021-01-31 07:42:00,000 INFO o.a.j.r.Summariser: summary =  29691 in 00:02:51 =  174.1/s Avg:   850 Min:     1 Max: 128773 Err:    77 (0.26%)
-2021-01-31 07:42:01,046 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-87
-2021-01-31 07:42:01,046 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-87
-2021-01-31 07:42:10,968 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-49
-2021-01-31 07:42:10,968 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-49
-2021-01-31 07:42:28,278 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-223
-2021-01-31 07:42:28,278 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-223
-2021-01-31 07:42:29,241 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-194
-2021-01-31 07:42:29,241 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-194
-2021-01-31 07:42:30,086 INFO o.a.j.r.Summariser: summary +   4365 in 00:00:30 =  145.1/s Avg:  1377 Min:     1 Max: 173061 Err:    24 (0.55%) Active: 239 Started: 250 Finished: 11
-2021-01-31 07:42:30,086 INFO o.a.j.r.Summariser: summary =  34056 in 00:03:21 =  169.8/s Avg:   918 Min:     1 Max: 173061 Err:   101 (0.30%)
-2021-01-31 07:42:33,101 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-161
-2021-01-31 07:42:33,101 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-161
-2021-01-31 07:42:46,098 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-250
-2021-01-31 07:42:46,099 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-250
-2021-01-31 07:42:50,508 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-158
-2021-01-31 07:42:50,508 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-158
-2021-01-31 07:42:51,171 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-172
-2021-01-31 07:42:51,171 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-172
-2021-01-31 07:43:00,001 INFO o.a.j.r.Summariser: summary +   3966 in 00:00:30 =  132.6/s Avg:  1503 Min:     1 Max: 194820 Err:    38 (0.96%) Active: 235 Started: 250 Finished: 15
-2021-01-31 07:43:00,001 INFO o.a.j.r.Summariser: summary =  38022 in 00:03:51 =  164.9/s Avg:   979 Min:     1 Max: 194820 Err:   139 (0.37%)
-2021-01-31 07:43:04,942 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-188
-2021-01-31 07:43:04,942 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-188
-2021-01-31 07:43:06,309 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-210
-2021-01-31 07:43:06,309 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-210
-2021-01-31 07:43:08,286 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-150
-2021-01-31 07:43:08,286 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-150
-2021-01-31 07:43:08,864 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-163
-2021-01-31 07:43:08,864 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-163
-2021-01-31 07:43:09,054 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-166
-2021-01-31 07:43:09,054 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-166
-2021-01-31 07:43:09,196 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-184
-2021-01-31 07:43:09,197 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-184
-2021-01-31 07:43:11,508 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-176
-2021-01-31 07:43:11,509 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-176
-2021-01-31 07:43:19,069 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-153
-2021-01-31 07:43:19,069 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-153
-2021-01-31 07:43:19,788 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-230
-2021-01-31 07:43:19,788 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-230
-2021-01-31 07:43:22,355 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-212
-2021-01-31 07:43:22,355 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-212
-2021-01-31 07:43:25,767 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-238
-2021-01-31 07:43:25,767 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-238
-2021-01-31 07:43:30,032 INFO o.a.j.r.Summariser: summary +   3091 in 00:00:30 =  102.9/s Avg:  1741 Min:     1 Max: 194120 Err:    35 (1.13%) Active: 224 Started: 250 Finished: 26
-2021-01-31 07:43:30,033 INFO o.a.j.r.Summariser: summary =  41113 in 00:04:21 =  157.8/s Avg:  1036 Min:     1 Max: 194820 Err:   174 (0.42%)
-2021-01-31 07:43:34,406 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-8
-2021-01-31 07:43:34,406 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-8
-2021-01-31 07:43:34,747 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-131
-2021-01-31 07:43:34,747 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-131
-2021-01-31 07:43:40,718 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-154
-2021-01-31 07:43:40,718 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-154
-2021-01-31 07:43:45,737 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-121
-2021-01-31 07:43:45,737 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-121
-2021-01-31 07:43:45,941 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-132
-2021-01-31 07:43:45,942 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-132
-2021-01-31 07:43:58,334 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-243
-2021-01-31 07:43:58,334 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-243
-2021-01-31 07:44:00,052 INFO o.a.j.r.Summariser: summary +   3093 in 00:00:30 =  103.0/s Avg:  2498 Min:     1 Max: 240586 Err:    36 (1.16%) Active: 218 Started: 250 Finished: 32
-2021-01-31 07:44:00,053 INFO o.a.j.r.Summariser: summary =  44206 in 00:04:51 =  152.1/s Avg:  1138 Min:     1 Max: 240586 Err:   210 (0.48%)
-2021-01-31 07:44:09,883 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-169
-2021-01-31 07:44:09,883 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-169
-2021-01-31 07:44:11,184 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-248
-2021-01-31 07:44:11,184 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-248
-2021-01-31 07:44:27,583 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-72
-2021-01-31 07:44:27,583 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-72
-2021-01-31 07:44:29,379 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-249
-2021-01-31 07:44:29,380 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-249
-2021-01-31 07:44:30,175 INFO o.a.j.r.Summariser: summary +   3218 in 00:00:30 =  106.8/s Avg:  1923 Min:     1 Max: 240200 Err:    39 (1.21%) Active: 214 Started: 250 Finished: 36
-2021-01-31 07:44:30,175 INFO o.a.j.r.Summariser: summary =  47424 in 00:05:21 =  147.9/s Avg:  1191 Min:     1 Max: 240586 Err:   249 (0.53%)
-2021-01-31 07:44:36,048 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-241
-2021-01-31 07:44:36,048 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-241
-2021-01-31 07:45:00,000 INFO o.a.j.r.Summariser: summary +   3053 in 00:00:30 =  102.4/s Avg:  1545 Min:     1 Max: 240184 Err:    20 (0.66%) Active: 213 Started: 250 Finished: 37
-2021-01-31 07:45:00,000 INFO o.a.j.r.Summariser: summary =  50477 in 00:05:51 =  144.0/s Avg:  1213 Min:     1 Max: 240586 Err:   269 (0.53%)
-2021-01-31 07:45:14,472 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-9
-2021-01-31 07:45:14,472 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-9
-2021-01-31 07:45:25,642 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-149
-2021-01-31 07:45:25,642 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-149
-2021-01-31 07:45:26,237 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-91
-2021-01-31 07:45:26,237 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-91
-2021-01-31 07:45:30,133 INFO o.a.j.r.Summariser: summary +   3292 in 00:00:30 =  109.2/s Avg:  1458 Min:     1 Max: 240352 Err:    24 (0.73%) Active: 210 Started: 250 Finished: 40
-2021-01-31 07:45:30,134 INFO o.a.j.r.Summariser: summary =  53769 in 00:06:21 =  141.3/s Avg:  1228 Min:     1 Max: 240586 Err:   293 (0.54%)
-2021-01-31 07:45:30,393 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-125
-2021-01-31 07:45:30,393 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-125
-2021-01-31 07:45:30,656 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-145
-2021-01-31 07:45:30,657 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-145
-2021-01-31 07:45:32,149 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-10
-2021-01-31 07:45:32,150 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-10
-2021-01-31 07:45:33,068 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-98
-2021-01-31 07:45:33,068 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-98
-2021-01-31 07:45:35,385 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-148
-2021-01-31 07:45:35,386 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-148
-2021-01-31 07:45:35,806 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-160
-2021-01-31 07:45:35,806 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-160
-2021-01-31 07:45:36,875 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-140
-2021-01-31 07:45:36,875 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-140
-2021-01-31 07:45:37,797 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-168
-2021-01-31 07:45:37,798 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-168
-2021-01-31 07:45:38,328 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-186
-2021-01-31 07:45:38,328 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-186
-2021-01-31 07:45:38,697 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-165
-2021-01-31 07:45:38,697 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-165
-2021-01-31 07:45:39,795 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-226
-2021-01-31 07:45:39,795 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-226
-2021-01-31 07:45:39,819 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-187
-2021-01-31 07:45:39,819 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-187
-2021-01-31 07:45:40,172 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-200
-2021-01-31 07:45:40,172 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-200
-2021-01-31 07:45:43,938 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-202
-2021-01-31 07:45:43,939 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-202
-2021-01-31 07:45:48,914 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-110
-2021-01-31 07:45:48,914 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-110
-2021-01-31 07:45:53,836 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-192
-2021-01-31 07:45:53,836 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-192
-2021-01-31 07:45:56,875 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-235
-2021-01-31 07:45:56,875 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-235
-2021-01-31 07:46:00,034 INFO o.a.j.r.Summariser: summary +   1885 in 00:00:30 =   63.0/s Avg:  3226 Min:     1 Max: 240663 Err:    29 (1.54%) Active: 193 Started: 250 Finished: 57
-2021-01-31 07:46:00,034 INFO o.a.j.r.Summariser: summary =  55654 in 00:06:51 =  135.6/s Avg:  1296 Min:     1 Max: 240663 Err:   322 (0.58%)
-2021-01-31 07:46:21,974 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-237
-2021-01-31 07:46:21,974 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-237
-2021-01-31 07:46:25,137 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-20
-2021-01-31 07:46:25,137 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-20
-2021-01-31 07:46:30,058 INFO o.a.j.r.Summariser: summary +    719 in 00:00:30 =   23.9/s Avg:  7429 Min:     1 Max: 240234 Err:    16 (2.23%) Active: 191 Started: 250 Finished: 59
-2021-01-31 07:46:30,058 INFO o.a.j.r.Summariser: summary =  56373 in 00:07:21 =  127.9/s Avg:  1374 Min:     1 Max: 240663 Err:   338 (0.60%)
-2021-01-31 07:46:45,767 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-43
-2021-01-31 07:46:45,767 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-43
-2021-01-31 07:47:00,045 INFO o.a.j.r.Summariser: summary +    826 in 00:00:30 =   27.5/s Avg:  6411 Min:     1 Max: 240457 Err:    13 (1.57%) Active: 190 Started: 250 Finished: 60
-2021-01-31 07:47:00,045 INFO o.a.j.r.Summariser: summary =  57199 in 00:07:51 =  121.6/s Avg:  1447 Min:     1 Max: 240663 Err:   351 (0.61%)
-2021-01-31 07:47:30,283 INFO o.a.j.r.Summariser: summary +    737 in 00:00:30 =   24.4/s Avg:  9674 Min:     1 Max: 240328 Err:    19 (2.58%) Active: 190 Started: 250 Finished: 60
-2021-01-31 07:47:30,283 INFO o.a.j.r.Summariser: summary =  57936 in 00:08:21 =  115.7/s Avg:  1551 Min:     1 Max: 240663 Err:   370 (0.64%)
-2021-01-31 07:48:00,009 INFO o.a.j.r.Summariser: summary +    907 in 00:00:30 =   30.5/s Avg:  5337 Min:     1 Max: 351975 Err:    14 (1.54%) Active: 190 Started: 250 Finished: 60
-2021-01-31 07:48:00,009 INFO o.a.j.r.Summariser: summary =  58843 in 00:08:51 =  110.9/s Avg:  1610 Min:     1 Max: 351975 Err:   384 (0.65%)
-2021-01-31 07:48:09,002 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-92
-2021-01-31 07:48:09,002 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-92
-2021-01-31 07:48:30,734 INFO o.a.j.r.Summariser: summary +    697 in 00:00:31 =   22.7/s Avg: 10222 Min:     1 Max: 287680 Err:    22 (3.16%) Active: 189 Started: 250 Finished: 61
-2021-01-31 07:48:30,734 INFO o.a.j.r.Summariser: summary =  59540 in 00:09:21 =  106.1/s Avg:  1710 Min:     1 Max: 351975 Err:   406 (0.68%)
-2021-01-31 07:48:43,208 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-45
-2021-01-31 07:48:43,208 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-45
-2021-01-31 07:49:00,603 INFO o.a.j.r.Summariser: summary +    479 in 00:00:30 =   16.0/s Avg: 10849 Min:     1 Max: 349954 Err:    11 (2.30%) Active: 188 Started: 250 Finished: 62
-2021-01-31 07:49:00,603 INFO o.a.j.r.Summariser: summary =  60019 in 00:09:51 =  101.5/s Avg:  1783 Min:     1 Max: 351975 Err:   417 (0.69%)
-2021-01-31 07:49:30,706 INFO o.a.j.r.Summariser: summary +    476 in 00:00:30 =   15.8/s Avg: 13471 Min:     1 Max: 241632 Err:    19 (3.99%) Active: 188 Started: 250 Finished: 62
-2021-01-31 07:49:30,706 INFO o.a.j.r.Summariser: summary =  60495 in 00:10:21 =   97.4/s Avg:  1875 Min:     1 Max: 351975 Err:   436 (0.72%)
-2021-01-31 07:49:30,758 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-71
-2021-01-31 07:49:30,758 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-71
-2021-01-31 07:50:00,586 INFO o.a.j.r.Summariser: summary +    433 in 00:00:30 =   14.5/s Avg: 10161 Min:     1 Max: 251429 Err:    12 (2.77%) Active: 187 Started: 250 Finished: 63
-2021-01-31 07:50:00,587 INFO o.a.j.r.Summariser: summary =  60928 in 00:10:51 =   93.6/s Avg:  1934 Min:     1 Max: 351975 Err:   448 (0.74%)
-2021-01-31 07:50:30,159 INFO o.a.j.r.Summariser: summary +    469 in 00:00:30 =   15.9/s Avg: 11776 Min:     1 Max: 346799 Err:    15 (3.20%) Active: 187 Started: 250 Finished: 63
-2021-01-31 07:50:30,159 INFO o.a.j.r.Summariser: summary =  61397 in 00:11:21 =   90.2/s Avg:  2009 Min:     1 Max: 351975 Err:   463 (0.75%)
-2021-01-31 07:50:31,499 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-18
-2021-01-31 07:50:31,500 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-18
-2021-01-31 07:50:55,042 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-7
-2021-01-31 07:50:55,042 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-7
-2021-01-31 07:51:00,239 INFO o.a.j.r.Summariser: summary +    442 in 00:00:30 =   14.7/s Avg: 11091 Min:     1 Max: 456585 Err:    14 (3.17%) Active: 185 Started: 250 Finished: 65
-2021-01-31 07:51:00,239 INFO o.a.j.r.Summariser: summary =  61839 in 00:11:51 =   87.0/s Avg:  2074 Min:     1 Max: 456585 Err:   477 (0.77%)
-2021-01-31 07:51:18,821 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-26
-2021-01-31 07:51:18,821 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-26
-2021-01-31 07:51:30,242 INFO o.a.j.r.Summariser: summary +    600 in 00:00:30 =   20.0/s Avg: 10367 Min:     1 Max: 292009 Err:    18 (3.00%) Active: 184 Started: 250 Finished: 66
-2021-01-31 07:51:30,242 INFO o.a.j.r.Summariser: summary =  62439 in 00:12:21 =   84.3/s Avg:  2154 Min:     1 Max: 456585 Err:   495 (0.79%)
-2021-01-31 07:52:00,654 INFO o.a.j.r.Summariser: summary +    560 in 00:00:30 =   18.4/s Avg:  9278 Min:     1 Max: 251222 Err:    13 (2.32%) Active: 184 Started: 250 Finished: 66
-2021-01-31 07:52:00,654 INFO o.a.j.r.Summariser: summary =  62999 in 00:12:51 =   81.7/s Avg:  2217 Min:     1 Max: 456585 Err:   508 (0.81%)
-2021-01-31 07:52:30,673 INFO o.a.j.r.Summariser: summary +    458 in 00:00:30 =   15.3/s Avg:  9416 Min:     1 Max: 336124 Err:    11 (2.40%) Active: 184 Started: 250 Finished: 66
-2021-01-31 07:52:30,673 INFO o.a.j.r.Summariser: summary =  63457 in 00:13:21 =   79.2/s Avg:  2269 Min:     1 Max: 456585 Err:   519 (0.82%)
-2021-01-31 07:52:38,622 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-174
-2021-01-31 07:52:38,622 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-174
-2021-01-31 07:52:49,041 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-63
-2021-01-31 07:52:49,041 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-63
-2021-01-31 07:53:00,079 INFO o.a.j.r.Summariser: summary +    449 in 00:00:29 =   15.3/s Avg: 14666 Min:     1 Max: 360032 Err:    15 (3.34%) Active: 182 Started: 250 Finished: 68
-2021-01-31 07:53:00,079 INFO o.a.j.r.Summariser: summary =  63906 in 00:13:51 =   76.9/s Avg:  2356 Min:     1 Max: 456585 Err:   534 (0.84%)
-2021-01-31 07:53:30,006 INFO o.a.j.r.Summariser: summary +    685 in 00:00:30 =   22.9/s Avg: 11226 Min:     1 Max: 640009 Err:    21 (3.07%) Active: 182 Started: 250 Finished: 68
-2021-01-31 07:53:30,006 INFO o.a.j.r.Summariser: summary =  64591 in 00:14:21 =   75.1/s Avg:  2450 Min:     1 Max: 640009 Err:   555 (0.86%)
-2021-01-31 07:54:01,098 INFO o.a.j.r.Summariser: summary +    440 in 00:00:31 =   14.2/s Avg: 11587 Min:     1 Max: 339166 Err:    18 (4.09%) Active: 182 Started: 250 Finished: 68
-2021-01-31 07:54:01,099 INFO o.a.j.r.Summariser: summary =  65031 in 00:14:52 =   72.9/s Avg:  2512 Min:     1 Max: 640009 Err:   573 (0.88%)
-2021-01-31 07:54:06,916 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-236
-2021-01-31 07:54:06,916 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-236
-2021-01-31 07:54:22,682 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-129
-2021-01-31 07:54:22,682 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-129
-2021-01-31 07:54:27,149 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-44
-2021-01-31 07:54:27,149 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-44
-2021-01-31 07:54:29,161 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-217
-2021-01-31 07:54:29,161 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-217
-2021-01-31 07:54:30,876 INFO o.a.j.r.Summariser: summary +    641 in 00:00:30 =   21.5/s Avg: 10000 Min:     1 Max: 347275 Err:    23 (3.59%) Active: 178 Started: 250 Finished: 72
-2021-01-31 07:54:30,877 INFO o.a.j.r.Summariser: summary =  65672 in 00:15:21 =   71.3/s Avg:  2585 Min:     1 Max: 640009 Err:   596 (0.91%)
-2021-01-31 07:55:00,045 INFO o.a.j.r.Summariser: summary +    403 in 00:00:29 =   13.8/s Avg: 11435 Min:     1 Max: 332363 Err:    11 (2.73%) Active: 178 Started: 250 Finished: 72
-2021-01-31 07:55:00,046 INFO o.a.j.r.Summariser: summary =  66075 in 00:15:51 =   69.5/s Avg:  2639 Min:     1 Max: 640009 Err:   607 (0.92%)
-2021-01-31 07:55:30,681 INFO o.a.j.r.Summariser: summary +    353 in 00:00:31 =   11.5/s Avg: 14658 Min:     1 Max: 240619 Err:    13 (3.68%) Active: 178 Started: 250 Finished: 72
-2021-01-31 07:55:30,681 INFO o.a.j.r.Summariser: summary =  66428 in 00:16:21 =   67.7/s Avg:  2703 Min:     1 Max: 640009 Err:   620 (0.93%)
-2021-01-31 07:56:00,185 INFO o.a.j.r.Summariser: summary +    474 in 00:00:30 =   16.1/s Avg: 10302 Min:     1 Max: 240419 Err:    10 (2.11%) Active: 178 Started: 250 Finished: 72
-2021-01-31 07:56:00,185 INFO o.a.j.r.Summariser: summary =  66902 in 00:16:51 =   66.2/s Avg:  2757 Min:     1 Max: 640009 Err:   630 (0.94%)
-2021-01-31 07:56:30,151 INFO o.a.j.r.Summariser: summary +    369 in 00:00:30 =   12.3/s Avg: 12282 Min:     1 Max: 240477 Err:     4 (1.08%) Active: 178 Started: 250 Finished: 72
-2021-01-31 07:56:30,152 INFO o.a.j.r.Summariser: summary =  67271 in 00:17:21 =   64.6/s Avg:  2809 Min:     1 Max: 640009 Err:   634 (0.94%)
-2021-01-31 07:56:37,241 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-28
-2021-01-31 07:56:37,241 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-28
-2021-01-31 07:56:44,490 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-108
-2021-01-31 07:56:44,491 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-108
-2021-01-31 07:57:00,365 INFO o.a.j.r.Summariser: summary +    311 in 00:00:30 =   10.3/s Avg: 17661 Min:     1 Max: 361278 Err:    13 (4.18%) Active: 176 Started: 250 Finished: 74
-2021-01-31 07:57:00,365 INFO o.a.j.r.Summariser: summary =  67582 in 00:17:51 =   63.1/s Avg:  2878 Min:     1 Max: 640009 Err:   647 (0.96%)
-2021-01-31 07:57:30,034 INFO o.a.j.r.Summariser: summary +    620 in 00:00:30 =   20.9/s Avg:  8511 Min:     1 Max: 455403 Err:    10 (1.61%) Active: 176 Started: 250 Finished: 74
-2021-01-31 07:57:30,034 INFO o.a.j.r.Summariser: summary =  68202 in 00:18:21 =   62.0/s Avg:  2929 Min:     1 Max: 640009 Err:   657 (0.96%)
-2021-01-31 07:58:01,692 INFO o.a.j.r.Summariser: summary +    515 in 00:00:32 =   16.3/s Avg:  8761 Min:     1 Max: 262558 Err:    10 (1.94%) Active: 176 Started: 250 Finished: 74
-2021-01-31 07:58:01,692 INFO o.a.j.r.Summariser: summary =  68717 in 00:18:52 =   60.7/s Avg:  2972 Min:     1 Max: 640009 Err:   667 (0.97%)
-2021-01-31 07:58:30,233 INFO o.a.j.r.Summariser: summary +    162 in 00:00:29 =    5.7/s Avg: 24623 Min:     1 Max: 240635 Err:    19 (11.73%) Active: 176 Started: 250 Finished: 74
-2021-01-31 07:58:30,234 INFO o.a.j.r.Summariser: summary =  68879 in 00:19:21 =   59.3/s Avg:  3023 Min:     1 Max: 640009 Err:   686 (1.00%)
-2021-01-31 07:58:35,379 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-190
-2021-01-31 07:58:35,379 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-190
-2021-01-31 07:59:01,262 INFO o.a.j.r.Summariser: summary +    239 in 00:00:31 =    7.7/s Avg: 16454 Min:     1 Max: 343190 Err:    16 (6.69%) Active: 175 Started: 250 Finished: 75
-2021-01-31 07:59:01,262 INFO o.a.j.r.Summariser: summary =  69118 in 00:19:52 =   58.0/s Avg:  3070 Min:     1 Max: 640009 Err:   702 (1.02%)
-2021-01-31 07:59:32,843 INFO o.a.j.r.Summariser: summary +    192 in 00:00:32 =    6.1/s Avg: 22263 Min:     1 Max: 463127 Err:    16 (8.33%) Active: 175 Started: 250 Finished: 75
-2021-01-31 07:59:32,843 INFO o.a.j.r.Summariser: summary =  69310 in 00:20:23 =   56.7/s Avg:  3123 Min:     1 Max: 640009 Err:   718 (1.04%)
-2021-01-31 08:00:00,005 INFO o.a.j.r.Summariser: summary +    511 in 00:00:27 =   18.8/s Avg: 12051 Min:     1 Max: 410455 Err:    13 (2.54%) Active: 175 Started: 250 Finished: 75
-2021-01-31 08:00:00,005 INFO o.a.j.r.Summariser: summary =  69821 in 00:20:51 =   55.8/s Avg:  3188 Min:     1 Max: 640009 Err:   731 (1.05%)
-2021-01-31 08:00:30,342 INFO o.a.j.r.Summariser: summary +    394 in 00:00:30 =   13.0/s Avg: 12823 Min:     1 Max: 343454 Err:    16 (4.06%) Active: 175 Started: 250 Finished: 75
-2021-01-31 08:00:30,342 INFO o.a.j.r.Summariser: summary =  70215 in 00:21:21 =   54.8/s Avg:  3242 Min:     1 Max: 640009 Err:   747 (1.06%)
-2021-01-31 08:00:57,541 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-15
-2021-01-31 08:00:57,541 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-15
-2021-01-31 08:01:00,084 INFO o.a.j.r.Summariser: summary +    494 in 00:00:30 =   16.6/s Avg: 14451 Min:     1 Max: 342849 Err:    17 (3.44%) Active: 174 Started: 250 Finished: 76
-2021-01-31 08:01:00,084 INFO o.a.j.r.Summariser: summary =  70709 in 00:21:51 =   54.0/s Avg:  3321 Min:     1 Max: 640009 Err:   764 (1.08%)
-2021-01-31 08:01:06,226 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-97
-2021-01-31 08:01:06,226 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-97
-2021-01-31 08:01:31,788 INFO o.a.j.r.Summariser: summary +    543 in 00:00:32 =   17.1/s Avg: 11319 Min:     1 Max: 462670 Err:    19 (3.50%) Active: 173 Started: 250 Finished: 77
-2021-01-31 08:01:31,788 INFO o.a.j.r.Summariser: summary =  71252 in 00:22:22 =   53.1/s Avg:  3382 Min:     1 Max: 640009 Err:   783 (1.10%)
-2021-01-31 08:01:54,928 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-101
-2021-01-31 08:01:54,928 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-101
-2021-01-31 08:01:58,320 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-40
-2021-01-31 08:01:58,320 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-40
-2021-01-31 08:02:01,272 INFO o.a.j.r.Summariser: summary +    247 in 00:00:29 =    8.4/s Avg: 15606 Min:     1 Max: 240579 Err:    18 (7.29%) Active: 171 Started: 250 Finished: 79
-2021-01-31 08:02:01,272 INFO o.a.j.r.Summariser: summary =  71499 in 00:22:52 =   52.1/s Avg:  3424 Min:     1 Max: 640009 Err:   801 (1.12%)
-2021-01-31 08:02:30,117 INFO o.a.j.r.Summariser: summary +    106 in 00:00:29 =    3.7/s Avg: 28024 Min:     2 Max: 240339 Err:    10 (9.43%) Active: 171 Started: 250 Finished: 79
-2021-01-31 08:02:30,117 INFO o.a.j.r.Summariser: summary =  71605 in 00:23:21 =   51.1/s Avg:  3460 Min:     1 Max: 640009 Err:   811 (1.13%)
-2021-01-31 08:03:00,313 INFO o.a.j.r.Summariser: summary +    132 in 00:00:30 =    4.4/s Avg: 31223 Min:     2 Max: 240549 Err:    18 (13.64%) Active: 171 Started: 250 Finished: 79
-2021-01-31 08:03:00,314 INFO o.a.j.r.Summariser: summary =  71737 in 00:23:51 =   50.1/s Avg:  3511 Min:     1 Max: 640009 Err:   829 (1.16%)
-2021-01-31 08:03:30,073 INFO o.a.j.r.Summariser: summary +    703 in 00:00:30 =   23.6/s Avg: 10123 Min:     1 Max: 371136 Err:    16 (2.28%) Active: 171 Started: 250 Finished: 79
-2021-01-31 08:03:30,073 INFO o.a.j.r.Summariser: summary =  72440 in 00:24:21 =   49.6/s Avg:  3576 Min:     1 Max: 640009 Err:   845 (1.17%)
-2021-01-31 08:03:35,647 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-95
-2021-01-31 08:03:35,647 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-95
-2021-01-31 08:04:00,060 INFO o.a.j.r.Summariser: summary +    581 in 00:00:30 =   19.4/s Avg: 11616 Min:     1 Max: 657914 Err:    14 (2.41%) Active: 170 Started: 250 Finished: 80
-2021-01-31 08:04:00,060 INFO o.a.j.r.Summariser: summary =  73021 in 00:24:51 =   49.0/s Avg:  3640 Min:     1 Max: 657914 Err:   859 (1.18%)
-2021-01-31 08:04:05,800 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-37
-2021-01-31 08:04:05,800 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-37
-2021-01-31 08:04:30,730 INFO o.a.j.r.Summariser: summary +    405 in 00:00:31 =   13.2/s Avg: 14192 Min:     1 Max: 649952 Err:    19 (4.69%) Active: 169 Started: 250 Finished: 81
-2021-01-31 08:04:30,730 INFO o.a.j.r.Summariser: summary =  73426 in 00:25:21 =   48.3/s Avg:  3698 Min:     1 Max: 657914 Err:   878 (1.20%)
-2021-01-31 08:04:32,303 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-156
-2021-01-31 08:04:32,303 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-156
-2021-01-31 08:05:00,559 INFO o.a.j.r.Summariser: summary +    305 in 00:00:30 =   10.2/s Avg: 18478 Min:     1 Max: 240649 Err:    22 (7.21%) Active: 168 Started: 250 Finished: 82
-2021-01-31 08:05:00,560 INFO o.a.j.r.Summariser: summary =  73731 in 00:25:51 =   47.5/s Avg:  3759 Min:     1 Max: 657914 Err:   900 (1.22%)
-2021-01-31 08:05:01,346 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-127
-2021-01-31 08:05:01,346 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-127
-2021-01-31 08:05:24,722 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-66
-2021-01-31 08:05:24,722 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-66
-2021-01-31 08:05:26,080 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-42
-2021-01-31 08:05:26,080 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-42
-2021-01-31 08:05:30,855 INFO o.a.j.r.Summariser: summary +    290 in 00:00:30 =    9.6/s Avg: 12463 Min:     1 Max: 240353 Err:    13 (4.48%) Active: 165 Started: 250 Finished: 85
-2021-01-31 08:05:30,856 INFO o.a.j.r.Summariser: summary =  74021 in 00:26:21 =   46.8/s Avg:  3793 Min:     1 Max: 657914 Err:   913 (1.23%)
-2021-01-31 08:05:30,920 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-25
-2021-01-31 08:05:30,920 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-25
-2021-01-31 08:05:31,283 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-1
-2021-01-31 08:05:31,283 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-1
-2021-01-31 08:05:38,225 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-23
-2021-01-31 08:05:38,225 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-23
-2021-01-31 08:06:00,313 INFO o.a.j.r.Summariser: summary +    431 in 00:00:29 =   14.6/s Avg: 10706 Min:     1 Max: 439962 Err:    10 (2.32%) Active: 162 Started: 250 Finished: 88
-2021-01-31 08:06:00,313 INFO o.a.j.r.Summariser: summary =  74452 in 00:26:51 =   46.2/s Avg:  3833 Min:     1 Max: 657914 Err:   923 (1.24%)
-2021-01-31 08:06:06,026 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-126
-2021-01-31 08:06:06,026 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-126
-2021-01-31 08:06:10,302 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-33
-2021-01-31 08:06:10,302 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-33
-2021-01-31 08:06:30,243 INFO o.a.j.r.Summariser: summary +    338 in 00:00:30 =   11.3/s Avg: 11767 Min:     1 Max: 597647 Err:     8 (2.37%) Active: 160 Started: 250 Finished: 90
-2021-01-31 08:06:30,243 INFO o.a.j.r.Summariser: summary =  74790 in 00:27:21 =   45.6/s Avg:  3869 Min:     1 Max: 657914 Err:   931 (1.24%)
-2021-01-31 08:07:00,027 INFO o.a.j.r.Summariser: summary +    394 in 00:00:30 =   13.2/s Avg: 12391 Min:     1 Max: 240606 Err:    17 (4.31%) Active: 160 Started: 250 Finished: 90
-2021-01-31 08:07:00,027 INFO o.a.j.r.Summariser: summary =  75184 in 00:27:51 =   45.0/s Avg:  3913 Min:     1 Max: 657914 Err:   948 (1.26%)
-2021-01-31 08:07:01,460 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-246
-2021-01-31 08:07:01,460 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-246
-2021-01-31 08:07:05,050 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-214
-2021-01-31 08:07:05,050 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-214
-2021-01-31 08:07:30,295 INFO o.a.j.r.Summariser: summary +    627 in 00:00:30 =   20.7/s Avg: 10262 Min:     1 Max: 526408 Err:    23 (3.67%) Active: 158 Started: 250 Finished: 92
-2021-01-31 08:07:30,296 INFO o.a.j.r.Summariser: summary =  75811 in 00:28:21 =   44.6/s Avg:  3966 Min:     1 Max: 657914 Err:   971 (1.28%)
-2021-01-31 08:07:30,407 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-76
-2021-01-31 08:07:30,407 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-76
-2021-01-31 08:07:39,307 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-209
-2021-01-31 08:07:39,307 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-209
-2021-01-31 08:07:47,385 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-136
-2021-01-31 08:07:47,386 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-136
-2021-01-31 08:07:59,469 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-29
-2021-01-31 08:07:59,469 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-29
-2021-01-31 08:08:00,049 INFO o.a.j.r.Summariser: summary +    609 in 00:00:30 =   20.5/s Avg: 12766 Min:     1 Max: 722842 Err:    30 (4.93%) Active: 154 Started: 250 Finished: 96
-2021-01-31 08:08:00,049 INFO o.a.j.r.Summariser: summary =  76420 in 00:28:51 =   44.2/s Avg:  4036 Min:     1 Max: 722842 Err:  1001 (1.31%)
-2021-01-31 08:08:02,052 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-170
-2021-01-31 08:08:02,052 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-170
-2021-01-31 08:08:30,002 INFO o.a.j.r.Summariser: summary +    438 in 00:00:30 =   14.6/s Avg:  8623 Min:     1 Max: 355824 Err:    10 (2.28%) Active: 153 Started: 250 Finished: 97
-2021-01-31 08:08:30,002 INFO o.a.j.r.Summariser: summary =  76858 in 00:29:21 =   43.7/s Avg:  4062 Min:     1 Max: 722842 Err:  1011 (1.32%)
-2021-01-31 08:08:31,748 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-215
-2021-01-31 08:08:31,748 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-215
-2021-01-31 08:08:31,812 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-245
-2021-01-31 08:08:31,812 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-245
-2021-01-31 08:08:33,374 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-155
-2021-01-31 08:08:33,374 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-155
-2021-01-31 08:08:43,330 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-89
-2021-01-31 08:08:43,330 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-89
-2021-01-31 08:09:00,195 INFO o.a.j.r.Summariser: summary +    442 in 00:00:30 =   14.6/s Avg: 13487 Min:     1 Max: 317742 Err:    18 (4.07%) Active: 149 Started: 250 Finished: 101
-2021-01-31 08:09:00,195 INFO o.a.j.r.Summariser: summary =  77300 in 00:29:51 =   43.2/s Avg:  4116 Min:     1 Max: 722842 Err:  1029 (1.33%)
-2021-01-31 08:09:00,269 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-70
-2021-01-31 08:09:00,269 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-70
-2021-01-31 08:09:11,185 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-195
-2021-01-31 08:09:11,185 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-195
-2021-01-31 08:09:31,648 INFO o.a.j.r.Summariser: summary +    201 in 00:00:31 =    6.4/s Avg: 16707 Min:     2 Max: 419145 Err:     9 (4.48%) Active: 147 Started: 250 Finished: 103
-2021-01-31 08:09:31,649 INFO o.a.j.r.Summariser: summary =  77501 in 00:30:22 =   42.5/s Avg:  4149 Min:     1 Max: 722842 Err:  1038 (1.34%)
-2021-01-31 08:10:00,833 INFO o.a.j.r.Summariser: summary +    233 in 00:00:29 =    8.0/s Avg: 16873 Min:     1 Max: 398364 Err:     9 (3.86%) Active: 147 Started: 250 Finished: 103
-2021-01-31 08:10:00,834 INFO o.a.j.r.Summariser: summary =  77734 in 00:30:51 =   42.0/s Avg:  4187 Min:     1 Max: 722842 Err:  1047 (1.35%)
-2021-01-31 08:10:02,207 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-123
-2021-01-31 08:10:02,207 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-123
-2021-01-31 08:10:14,990 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-240
-2021-01-31 08:10:14,990 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-240
-2021-01-31 08:10:30,322 INFO o.a.j.r.Summariser: summary +    270 in 00:00:29 =    9.2/s Avg: 12088 Min:     2 Max: 423061 Err:    12 (4.44%) Active: 145 Started: 250 Finished: 105
-2021-01-31 08:10:30,322 INFO o.a.j.r.Summariser: summary =  78004 in 00:31:21 =   41.5/s Avg:  4214 Min:     1 Max: 722842 Err:  1059 (1.36%)
-2021-01-31 08:11:00,963 INFO o.a.j.r.Summariser: summary +    180 in 00:00:31 =    5.9/s Avg: 27062 Min:     2 Max: 542912 Err:    11 (6.11%) Active: 145 Started: 250 Finished: 105
-2021-01-31 08:11:00,964 INFO o.a.j.r.Summariser: summary =  78184 in 00:31:51 =   40.9/s Avg:  4267 Min:     1 Max: 722842 Err:  1070 (1.37%)
-2021-01-31 08:11:05,462 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-39
-2021-01-31 08:11:05,462 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-39
-2021-01-31 08:11:08,935 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-94
-2021-01-31 08:11:08,936 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-94
-2021-01-31 08:11:31,185 INFO o.a.j.r.Summariser: summary +    186 in 00:00:30 =    6.2/s Avg: 20524 Min:     1 Max: 536108 Err:    10 (5.38%) Active: 143 Started: 250 Finished: 107
-2021-01-31 08:11:31,186 INFO o.a.j.r.Summariser: summary =  78370 in 00:32:22 =   40.4/s Avg:  4305 Min:     1 Max: 722842 Err:  1080 (1.38%)
-2021-01-31 08:12:00,807 INFO o.a.j.r.Summariser: summary +    332 in 00:00:30 =   11.2/s Avg: 16444 Min:     1 Max: 336088 Err:    18 (5.42%) Active: 143 Started: 250 Finished: 107
-2021-01-31 08:12:00,807 INFO o.a.j.r.Summariser: summary =  78702 in 00:32:51 =   39.9/s Avg:  4357 Min:     1 Max: 722842 Err:  1098 (1.40%)
+2021-01-31 08:22:57,184 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2021-01-31 08:22:57,206 INFO o.a.j.JMeter: Loading user properties from: /opt/apache-jmeter-5.1.1/bin/user.properties
+2021-01-31 08:22:57,206 INFO o.a.j.JMeter: Loading system properties from: /opt/apache-jmeter-5.1.1/bin/system.properties
+2021-01-31 08:22:57,207 INFO o.a.j.JMeter: Setting System property: log_level.jmeter=DEBUG
+2021-01-31 08:22:57,207 INFO o.a.j.JMeter: Setting JMeter property: TARGET_THREADS=100
+2021-01-31 08:22:57,207 INFO o.a.j.JMeter: Setting JMeter property: TARGET_TOKEN=7004ded24f43a4450968747fa79f06de8ecc4286da
+2021-01-31 08:22:57,207 INFO o.a.j.JMeter: Setting JMeter property: TARGET_TIME=60
+2021-01-31 08:22:57,207 INFO o.a.j.JMeter: Setting JMeter property: TARGET_LOOPS=2
+2021-01-31 08:22:57,213 INFO o.a.j.JMeter: Copyright (c) 1998-2019 The Apache Software Foundation
+2021-01-31 08:22:57,213 INFO o.a.j.JMeter: Version 5.1.1 r1855137
+2021-01-31 08:22:57,213 INFO o.a.j.JMeter: java.version=1.8.0_222
+2021-01-31 08:22:57,213 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2021-01-31 08:22:57,213 INFO o.a.j.JMeter: os.name=Linux
+2021-01-31 08:22:57,213 INFO o.a.j.JMeter: os.arch=amd64
+2021-01-31 08:22:57,213 INFO o.a.j.JMeter: os.version=5.4.0-1037-aws
+2021-01-31 08:22:57,213 INFO o.a.j.JMeter: file.encoding=UTF-8
+2021-01-31 08:22:57,213 INFO o.a.j.JMeter: java.awt.headless=true
+2021-01-31 08:22:57,214 INFO o.a.j.JMeter: Max memory     =23429382144
+2021-01-31 08:22:57,214 INFO o.a.j.JMeter: Available Processors =8
+2021-01-31 08:22:57,219 INFO o.a.j.JMeter: Default Locale=English (EN)
+2021-01-31 08:22:57,220 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2021-01-31 08:22:57,220 INFO o.a.j.JMeter: JMeterHome=/opt/apache-jmeter-5.1.1
+2021-01-31 08:22:57,220 INFO o.a.j.JMeter: user.dir  =/home/ubuntu/jmeter
+2021-01-31 08:22:57,220 INFO o.a.j.JMeter: PWD       =/home/ubuntu/jmeter
+2021-01-31 08:22:57,220 INFO o.a.j.JMeter: IP: 172.17.0.3 Name: ab4bcab1f5b1 FullName: ab4bcab1f5b1
+2021-01-31 08:22:57,223 INFO o.a.j.JMeter: Setting property 'jmeter.reportgenerator.outputdir' to:'/home/ubuntu/jmeter/tests/compra2/report-2021-01-31-08-22'
+2021-01-31 08:22:57,226 INFO o.a.j.s.FileServer: Default base='/home/ubuntu/jmeter'
+2021-01-31 08:22:57,232 INFO o.a.j.s.FileServer: Set new base='/home/ubuntu/jmeter/tests/compra2'
+2021-01-31 08:22:57,401 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2021-01-31 08:22:57,418 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2021-01-31 08:22:57,424 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2021-01-31 08:22:57,432 INFO o.a.j.s.SaveService: Loading file: tests/compra2/PSWRSV-2021.jmx
+2021-01-31 08:22:57,482 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2021-01-31 08:22:57,493 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-01-31 08:22:57,494 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-01-31 08:22:57,494 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-01-31 08:22:57,494 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2021-01-31 08:22:57,494 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2021-01-31 08:22:57,494 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2021-01-31 08:22:57,841 INFO o.a.j.e.KeyToolUtils: keytool found at 'keytool'
+2021-01-31 08:22:57,842 INFO o.a.j.p.h.p.ProxyControl: HTTP(S) Test Script Recorder SSL Proxy will use keys that support embedded 3rd party resources in file /opt/apache-jmeter-5.1.1/bin/proxyserver.jks
+2021-01-31 08:22:57,884 INFO o.a.j.JMeter: Creating summariser <summary>
+2021-01-31 08:22:57,899 INFO o.a.j.r.d.ReportGenerator: ReportGenerator will use for Parsing the separator: ','
+2021-01-31 08:22:57,899 INFO o.a.j.r.d.ReportGenerator: Will generate report at end of test from  results file: tests/compra2/test-plan.jtl
+2021-01-31 08:22:57,899 INFO o.a.j.r.d.ReportGenerator: Reading report generator properties from: /opt/apache-jmeter-5.1.1/bin/reportgenerator.properties
+2021-01-31 08:22:57,899 INFO o.a.j.r.d.ReportGenerator: Merging with JMeter properties
+2021-01-31 08:22:57,905 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.temp_dir' not found, using default value 'temp' instead.
+2021-01-31 08:22:57,909 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.apdex_per_transaction' not found, using default value 'null' instead.
+2021-01-31 08:22:57,909 INFO o.a.j.r.c.ReportGeneratorConfiguration: apdex_per_transaction : {} is empty, not APDEX per transaction customization
+2021-01-31 08:22:57,909 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.sample_filter' not found, using default value 'null' instead.
+2021-01-31 08:22:57,909 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.report_title' not found, using default value 'null' instead.
+2021-01-31 08:22:57,909 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.start_date' not found, using default value 'null' instead.
+2021-01-31 08:22:57,909 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.end_date' not found, using default value 'null' instead.
+2021-01-31 08:22:57,910 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.date_format' not found, using default value 'null' instead.
+2021-01-31 08:22:57,910 INFO o.a.j.r.c.ReportGeneratorConfiguration: Will use date range start date: null, end date: null
+2021-01-31 08:22:57,915 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.totalTPS.exclude_controllers' not found, using default value 'false' instead.
+2021-01-31 08:22:57,915 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.activeThreadsOverTime.exclude_controllers' not found, using default value 'false' instead.
+2021-01-31 08:22:57,916 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.timeVsThreads.exclude_controllers' not found, using default value 'false' instead.
+2021-01-31 08:22:57,916 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimeDistribution.exclude_controllers' not found, using default value 'false' instead.
+2021-01-31 08:22:57,916 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.transactionsPerSecond.exclude_controllers' not found, using default value 'false' instead.
+2021-01-31 08:22:57,916 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentiles.exclude_controllers' not found, using default value 'false' instead.
+2021-01-31 08:22:57,916 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimePercentilesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2021-01-31 08:22:57,916 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.responseTimesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2021-01-31 08:22:57,917 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.connectTimeOverTime.exclude_controllers' not found, using default value 'false' instead.
+2021-01-31 08:22:57,917 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.graph.latenciesOverTime.exclude_controllers' not found, using default value 'false' instead.
+2021-01-31 08:22:57,918 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.filters_only_sample_series' not found, using default value 'true' instead.
+2021-01-31 08:22:57,918 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.series_filter' not found, using default value '' instead.
+2021-01-31 08:22:57,918 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.json.show_controllers_only' not found, using default value 'false' instead.
+2021-01-31 08:22:57,919 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.filters_only_sample_series' not found, using default value 'true' instead.
+2021-01-31 08:22:57,919 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.series_filter' not found, using default value '' instead.
+2021-01-31 08:22:57,919 INFO o.a.j.r.c.ReportGeneratorConfiguration: Property 'jmeter.reportgenerator.exporter.html.show_controllers_only' not found, using default value 'false' instead.
+2021-01-31 08:22:57,925 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2021-01-31 08:22:57,926 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2021-01-31 08:22:57,926 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2021-01-31 08:22:57,933 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2021-01-31 08:22:57,933 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2021-01-31 08:22:58,388 INFO o.a.j.JMeter: Running test (1612081378388)
+2021-01-31 08:22:58,565 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Grupo de Hilos
+2021-01-31 08:22:58,565 INFO o.a.j.e.StandardJMeterEngine: Starting 100 threads for group Grupo de Hilos.
+2021-01-31 08:22:58,566 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2021-01-31 08:22:58,566 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=100 ramp-up=60 delayedStart=false
+2021-01-31 08:22:58,603 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-1
+2021-01-31 08:22:58,628 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = ab4bcab1f5b1
+2021-01-31 08:22:58,636 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2021-01-31 08:22:58,638 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2021-01-31 08:22:58,639 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2021-01-31 08:22:58,639 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2021-01-31 08:22:58,639 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2021-01-31 08:22:58,739 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
+2021-01-31 08:22:58,753 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2021-01-31 08:22:58,754 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2021-01-31 08:22:58,839 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
+2021-01-31 08:22:58,843 INFO o.a.j.u.SSLManager: KeyStore created OK
+2021-01-31 08:22:58,843 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
+2021-01-31 08:22:59,199 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-2
+2021-01-31 08:22:59,337 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2021-01-31 08:22:59,337 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2021-01-31 08:22:59,797 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-3
+2021-01-31 08:23:00,404 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-4
+2021-01-31 08:23:01,013 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-5
+2021-01-31 08:23:01,072 INFO o.a.j.r.Summariser: summary +      1 in 00:00:03 =    0.4/s Avg:  2364 Min:  2364 Max:  2364 Err:     0 (0.00%) Active: 5 Started: 5 Finished: 0
+2021-01-31 08:23:01,610 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-6
+2021-01-31 08:23:02,201 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-7
+2021-01-31 08:23:02,824 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-8
+2021-01-31 08:23:03,396 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-9
+2021-01-31 08:23:04,020 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-10
+2021-01-31 08:23:04,602 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-11
+2021-01-31 08:23:05,211 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-12
+2021-01-31 08:23:05,805 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-13
+2021-01-31 08:23:06,395 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-14
+2021-01-31 08:23:06,999 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-15
+2021-01-31 08:23:07,606 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-16
+2021-01-31 08:23:08,194 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-17
+2021-01-31 08:23:08,820 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-18
+2021-01-31 08:23:09,421 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-19
+2021-01-31 08:23:10,006 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-20
+2021-01-31 08:23:10,604 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-21
+2021-01-31 08:23:11,201 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-22
+2021-01-31 08:23:11,816 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-23
+2021-01-31 08:23:12,411 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-24
+2021-01-31 08:23:13,000 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-25
+2021-01-31 08:23:13,601 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-26
+2021-01-31 08:23:14,208 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-27
+2021-01-31 08:23:14,813 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-28
+2021-01-31 08:23:15,401 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-29
+2021-01-31 08:23:16,019 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-30
+2021-01-31 08:23:16,615 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-31
+2021-01-31 08:23:17,216 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-32
+2021-01-31 08:23:17,802 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-33
+2021-01-31 08:23:18,412 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-34
+2021-01-31 08:23:18,997 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-35
+2021-01-31 08:23:19,605 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-36
+2021-01-31 08:23:20,201 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-37
+2021-01-31 08:23:20,816 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-38
+2021-01-31 08:23:21,405 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-39
+2021-01-31 08:23:22,003 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-40
+2021-01-31 08:23:22,608 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-41
+2021-01-31 08:23:23,211 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-42
+2021-01-31 08:23:23,802 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-43
+2021-01-31 08:23:24,402 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-44
+2021-01-31 08:23:25,035 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-45
+2021-01-31 08:23:25,600 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-46
+2021-01-31 08:23:26,205 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-47
+2021-01-31 08:23:26,808 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-48
+2021-01-31 08:23:27,402 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-49
+2021-01-31 08:23:28,001 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-50
+2021-01-31 08:23:28,611 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-51
+2021-01-31 08:23:29,206 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-52
+2021-01-31 08:23:29,802 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-53
+2021-01-31 08:23:30,009 INFO o.a.j.r.Summariser: summary +    829 in 00:00:29 =   28.6/s Avg:    53 Min:     2 Max:  1983 Err:     0 (0.00%) Active: 53 Started: 53 Finished: 0
+2021-01-31 08:23:30,009 INFO o.a.j.r.Summariser: summary =    830 in 00:00:32 =   26.2/s Avg:    55 Min:     2 Max:  2364 Err:     0 (0.00%)
+2021-01-31 08:23:30,397 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-54
+2021-01-31 08:23:30,996 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-55
+2021-01-31 08:23:31,603 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-56
+2021-01-31 08:23:32,201 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-57
+2021-01-31 08:23:32,820 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-58
+2021-01-31 08:23:33,412 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-59
+2021-01-31 08:23:34,005 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-60
+2021-01-31 08:23:34,607 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-61
+2021-01-31 08:23:35,211 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-62
+2021-01-31 08:23:35,790 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-63
+2021-01-31 08:23:36,406 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-64
+2021-01-31 08:23:37,001 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-65
+2021-01-31 08:23:37,606 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-66
+2021-01-31 08:23:38,207 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-67
+2021-01-31 08:23:38,810 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-68
+2021-01-31 08:23:39,407 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-69
+2021-01-31 08:23:40,011 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-70
+2021-01-31 08:23:40,605 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-71
+2021-01-31 08:23:41,222 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-72
+2021-01-31 08:23:41,807 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-73
+2021-01-31 08:23:42,407 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-74
+2021-01-31 08:23:43,009 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-75
+2021-01-31 08:23:43,612 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-76
+2021-01-31 08:23:44,208 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-77
+2021-01-31 08:23:44,795 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-78
+2021-01-31 08:23:45,393 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-79
+2021-01-31 08:23:45,989 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-80
+2021-01-31 08:23:46,585 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-81
+2021-01-31 08:23:47,184 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-82
+2021-01-31 08:23:47,781 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-83
+2021-01-31 08:23:48,380 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-84
+2021-01-31 08:23:48,981 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-85
+2021-01-31 08:23:49,580 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-86
+2021-01-31 08:23:50,180 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-87
+2021-01-31 08:23:50,780 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-88
+2021-01-31 08:23:51,381 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-89
+2021-01-31 08:23:51,980 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-90
+2021-01-31 08:23:52,580 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-91
+2021-01-31 08:23:53,180 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-92
+2021-01-31 08:23:53,780 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-93
+2021-01-31 08:23:54,381 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-94
+2021-01-31 08:23:54,980 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-95
+2021-01-31 08:23:55,581 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-96
+2021-01-31 08:23:56,180 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-97
+2021-01-31 08:23:56,780 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-98
+2021-01-31 08:23:57,381 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-99
+2021-01-31 08:23:57,980 INFO o.a.j.t.JMeterThread: Thread started: Grupo de Hilos 1-100
+2021-01-31 08:24:00,003 INFO o.a.j.r.Summariser: summary +   6740 in 00:00:30 =  224.7/s Avg:   184 Min:     1 Max: 42810 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2021-01-31 08:24:00,003 INFO o.a.j.r.Summariser: summary =   7570 in 00:01:02 =  122.9/s Avg:   170 Min:     1 Max: 42810 Err:     0 (0.00%)
+2021-01-31 08:24:11,069 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-37
+2021-01-31 08:24:11,069 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-37
+2021-01-31 08:24:12,418 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-45
+2021-01-31 08:24:12,418 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-45
+2021-01-31 08:24:12,808 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-44
+2021-01-31 08:24:12,809 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-44
+2021-01-31 08:24:14,000 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-43
+2021-01-31 08:24:14,001 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-43
+2021-01-31 08:24:14,613 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-47
+2021-01-31 08:24:14,613 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-47
+2021-01-31 08:24:14,639 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-50
+2021-01-31 08:24:14,639 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-50
+2021-01-31 08:24:16,207 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-48
+2021-01-31 08:24:16,207 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-48
+2021-01-31 08:24:17,170 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-54
+2021-01-31 08:24:17,171 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-54
+2021-01-31 08:24:18,073 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-49
+2021-01-31 08:24:18,073 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-49
+2021-01-31 08:24:19,520 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-53
+2021-01-31 08:24:19,520 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-53
+2021-01-31 08:24:21,012 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-60
+2021-01-31 08:24:21,012 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-60
+2021-01-31 08:24:21,194 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-62
+2021-01-31 08:24:21,195 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-62
+2021-01-31 08:24:21,378 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-59
+2021-01-31 08:24:21,378 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-59
+2021-01-31 08:24:23,288 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-4
+2021-01-31 08:24:23,288 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-4
+2021-01-31 08:24:27,702 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-46
+2021-01-31 08:24:27,702 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-46
+2021-01-31 08:24:30,021 INFO o.a.j.r.Summariser: summary +   3443 in 00:00:30 =  114.7/s Avg:   227 Min:     1 Max: 45378 Err:     0 (0.00%) Active: 85 Started: 100 Finished: 15
+2021-01-31 08:24:30,021 INFO o.a.j.r.Summariser: summary =  11013 in 00:01:32 =  120.2/s Avg:   188 Min:     1 Max: 45378 Err:     0 (0.00%)
+2021-01-31 08:24:33,038 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-86
+2021-01-31 08:24:33,039 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-86
+2021-01-31 08:25:00,001 INFO o.a.j.r.Summariser: summary +    943 in 00:00:30 =   31.5/s Avg:  1774 Min:     1 Max: 118181 Err:     0 (0.00%) Active: 84 Started: 100 Finished: 16
+2021-01-31 08:25:00,002 INFO o.a.j.r.Summariser: summary =  11956 in 00:02:02 =   98.3/s Avg:   313 Min:     1 Max: 118181 Err:     0 (0.00%)
+2021-01-31 08:25:30,006 INFO o.a.j.r.Summariser: summary +   4081 in 00:00:30 =  136.0/s Avg:  1103 Min:     1 Max: 122756 Err:     5 (0.12%) Active: 84 Started: 100 Finished: 16
+2021-01-31 08:25:30,007 INFO o.a.j.r.Summariser: summary =  16037 in 00:02:32 =  105.8/s Avg:   514 Min:     1 Max: 122756 Err:     5 (0.03%)
+2021-01-31 08:25:54,569 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-20
+2021-01-31 08:25:54,569 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-20
+2021-01-31 08:25:55,848 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-24
+2021-01-31 08:25:55,849 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-24
+2021-01-31 08:25:56,196 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-23
+2021-01-31 08:25:56,196 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-23
+2021-01-31 08:25:59,854 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-7
+2021-01-31 08:25:59,854 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-7
+2021-01-31 08:26:00,000 INFO o.a.j.r.Summariser: summary +   6108 in 00:00:30 =  203.6/s Avg:   563 Min:     1 Max: 154986 Err:     2 (0.03%) Active: 80 Started: 100 Finished: 20
+2021-01-31 08:26:00,001 INFO o.a.j.r.Summariser: summary =  22145 in 00:03:02 =  121.9/s Avg:   527 Min:     1 Max: 154986 Err:     7 (0.03%)
+2021-01-31 08:26:03,241 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-30
+2021-01-31 08:26:03,241 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-30
+2021-01-31 08:26:03,810 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-33
+2021-01-31 08:26:03,810 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-33
+2021-01-31 08:26:16,296 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-84
+2021-01-31 08:26:16,297 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-84
+2021-01-31 08:26:17,411 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-35
+2021-01-31 08:26:17,411 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-35
+2021-01-31 08:26:22,954 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-19
+2021-01-31 08:26:22,954 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-19
+2021-01-31 08:26:30,120 INFO o.a.j.r.Summariser: summary +   2550 in 00:00:30 =   84.7/s Avg:   870 Min:     1 Max: 144163 Err:     0 (0.00%) Active: 75 Started: 100 Finished: 25
+2021-01-31 08:26:30,120 INFO o.a.j.r.Summariser: summary =  24695 in 00:03:32 =  116.6/s Avg:   563 Min:     1 Max: 154986 Err:     7 (0.03%)
+2021-01-31 08:26:40,589 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-10
+2021-01-31 08:26:40,589 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-10
+2021-01-31 08:26:52,101 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-67
+2021-01-31 08:26:52,101 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-67
+2021-01-31 08:26:55,254 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-39
+2021-01-31 08:26:55,254 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-39
+2021-01-31 08:26:56,548 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-27
+2021-01-31 08:26:56,548 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-27
+2021-01-31 08:26:58,701 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-9
+2021-01-31 08:26:58,701 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-9
+2021-01-31 08:27:00,094 INFO o.a.j.r.Summariser: summary +   1660 in 00:00:30 =   55.4/s Avg:  1138 Min:     1 Max: 104755 Err:     2 (0.12%) Active: 70 Started: 100 Finished: 30
+2021-01-31 08:27:00,095 INFO o.a.j.r.Summariser: summary =  26355 in 00:04:02 =  109.0/s Avg:   599 Min:     1 Max: 154986 Err:     9 (0.03%)
+2021-01-31 08:27:00,521 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-32
+2021-01-31 08:27:00,521 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-32
+2021-01-31 08:27:11,927 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-72
+2021-01-31 08:27:11,927 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-72
+2021-01-31 08:27:13,378 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-31
+2021-01-31 08:27:13,378 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-31
+2021-01-31 08:27:14,514 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-74
+2021-01-31 08:27:14,514 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-74
+2021-01-31 08:27:14,574 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-6
+2021-01-31 08:27:14,574 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-6
+2021-01-31 08:27:15,254 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-87
+2021-01-31 08:27:15,254 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-87
+2021-01-31 08:27:15,654 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-100
+2021-01-31 08:27:15,654 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-100
+2021-01-31 08:27:16,144 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-26
+2021-01-31 08:27:16,144 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-26
+2021-01-31 08:27:17,213 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-75
+2021-01-31 08:27:17,213 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-75
+2021-01-31 08:27:29,316 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-29
+2021-01-31 08:27:29,316 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-29
+2021-01-31 08:27:30,137 INFO o.a.j.r.Summariser: summary +   1794 in 00:00:30 =   59.7/s Avg:  1223 Min:     1 Max: 201547 Err:     0 (0.00%) Active: 60 Started: 100 Finished: 40
+2021-01-31 08:27:30,137 INFO o.a.j.r.Summariser: summary =  28149 in 00:04:32 =  103.6/s Avg:   639 Min:     1 Max: 201547 Err:     9 (0.03%)
+2021-01-31 08:27:48,829 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-42
+2021-01-31 08:27:48,829 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-42
+2021-01-31 08:27:50,937 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-36
+2021-01-31 08:27:50,937 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-36
+2021-01-31 08:27:57,265 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-85
+2021-01-31 08:27:57,265 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-85
+2021-01-31 08:28:00,099 INFO o.a.j.r.Summariser: summary +   2247 in 00:00:30 =   75.0/s Avg:   736 Min:     1 Max: 111224 Err:     2 (0.09%) Active: 57 Started: 100 Finished: 43
+2021-01-31 08:28:00,099 INFO o.a.j.r.Summariser: summary =  30396 in 00:05:02 =  100.7/s Avg:   646 Min:     1 Max: 201547 Err:    11 (0.04%)
+2021-01-31 08:28:04,460 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-18
+2021-01-31 08:28:04,460 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-18
+2021-01-31 08:28:05,803 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-1
+2021-01-31 08:28:05,803 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-1
+2021-01-31 08:28:05,812 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-89
+2021-01-31 08:28:05,812 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-89
+2021-01-31 08:28:06,745 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-64
+2021-01-31 08:28:06,745 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-64
+2021-01-31 08:28:30,763 INFO o.a.j.r.Summariser: summary +    301 in 00:00:31 =    9.8/s Avg:  3863 Min:     1 Max: 119494 Err:     0 (0.00%) Active: 53 Started: 100 Finished: 47
+2021-01-31 08:28:30,763 INFO o.a.j.r.Summariser: summary =  30697 in 00:05:32 =   92.4/s Avg:   677 Min:     1 Max: 201547 Err:    11 (0.04%)
+2021-01-31 08:28:36,135 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-69
+2021-01-31 08:28:36,135 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-69
+2021-01-31 08:28:51,388 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-11
+2021-01-31 08:28:51,388 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-11
+2021-01-31 08:28:52,669 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-70
+2021-01-31 08:28:52,669 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-70
+2021-01-31 08:28:55,350 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-38
+2021-01-31 08:28:55,350 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-38
+2021-01-31 08:29:00,261 INFO o.a.j.r.Summariser: summary +   1129 in 00:00:29 =   38.3/s Avg:  1847 Min:     1 Max: 240198 Err:     2 (0.18%) Active: 49 Started: 100 Finished: 51
+2021-01-31 08:29:00,262 INFO o.a.j.r.Summariser: summary =  31826 in 00:06:02 =   87.9/s Avg:   719 Min:     1 Max: 240198 Err:    13 (0.04%)
+2021-01-31 08:29:18,084 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-93
+2021-01-31 08:29:18,084 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-93
+2021-01-31 08:29:23,350 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-83
+2021-01-31 08:29:23,350 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-83
+2021-01-31 08:29:26,482 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-13
+2021-01-31 08:29:26,482 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-13
+2021-01-31 08:29:30,173 INFO o.a.j.r.Summariser: summary +    741 in 00:00:30 =   24.8/s Avg:  1984 Min:     1 Max: 240211 Err:     2 (0.27%) Active: 46 Started: 100 Finished: 54
+2021-01-31 08:29:30,173 INFO o.a.j.r.Summariser: summary =  32567 in 00:06:32 =   83.1/s Avg:   748 Min:     1 Max: 240211 Err:    15 (0.05%)
+2021-01-31 08:29:39,597 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-79
+2021-01-31 08:29:39,597 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-79
+2021-01-31 08:30:00,322 INFO o.a.j.r.Summariser: summary +    922 in 00:00:30 =   30.6/s Avg:  1015 Min:     1 Max: 121580 Err:     0 (0.00%) Active: 45 Started: 100 Finished: 55
+2021-01-31 08:30:00,323 INFO o.a.j.r.Summariser: summary =  33489 in 00:07:02 =   79.4/s Avg:   755 Min:     1 Max: 240211 Err:    15 (0.04%)
+2021-01-31 08:30:14,796 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-66
+2021-01-31 08:30:14,796 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-66
+2021-01-31 08:30:23,322 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-82
+2021-01-31 08:30:23,322 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-82
+2021-01-31 08:30:30,269 INFO o.a.j.r.Summariser: summary +    538 in 00:00:30 =   18.0/s Avg:  3948 Min:     1 Max: 240187 Err:     5 (0.93%) Active: 43 Started: 100 Finished: 57
+2021-01-31 08:30:30,269 INFO o.a.j.r.Summariser: summary =  34027 in 00:07:32 =   75.3/s Avg:   806 Min:     1 Max: 240211 Err:    20 (0.06%)
+2021-01-31 08:31:00,166 INFO o.a.j.r.Summariser: summary +    352 in 00:00:30 =   11.8/s Avg:  2102 Min:     1 Max: 56463 Err:     0 (0.00%) Active: 43 Started: 100 Finished: 57
+2021-01-31 08:31:00,166 INFO o.a.j.r.Summariser: summary =  34379 in 00:08:02 =   71.4/s Avg:   819 Min:     1 Max: 240211 Err:    20 (0.06%)
+2021-01-31 08:31:00,214 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-88
+2021-01-31 08:31:00,214 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-88
+2021-01-31 08:31:30,561 INFO o.a.j.r.Summariser: summary +    219 in 00:00:30 =    7.2/s Avg:  5914 Min:     1 Max: 240194 Err:     1 (0.46%) Active: 42 Started: 100 Finished: 58
+2021-01-31 08:31:30,561 INFO o.a.j.r.Summariser: summary =  34598 in 00:08:32 =   67.6/s Avg:   851 Min:     1 Max: 240211 Err:    21 (0.06%)
+2021-01-31 08:31:37,269 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-57
+2021-01-31 08:31:37,269 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-57
+2021-01-31 08:31:38,568 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-28
+2021-01-31 08:31:38,569 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-28
+2021-01-31 08:31:42,449 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-77
+2021-01-31 08:31:42,449 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-77
+2021-01-31 08:31:43,978 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-51
+2021-01-31 08:31:43,978 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-51
+2021-01-31 08:31:48,730 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-91
+2021-01-31 08:31:48,730 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-91
+2021-01-31 08:32:00,470 INFO o.a.j.r.Summariser: summary +    320 in 00:00:30 =   10.7/s Avg:  5105 Min:     1 Max: 240186 Err:     2 (0.62%) Active: 37 Started: 100 Finished: 63
+2021-01-31 08:32:00,471 INFO o.a.j.r.Summariser: summary =  34918 in 00:09:02 =   64.4/s Avg:   890 Min:     1 Max: 240211 Err:    23 (0.07%)
+2021-01-31 08:32:05,809 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-71
+2021-01-31 08:32:05,809 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-71
+2021-01-31 08:32:30,381 INFO o.a.j.r.Summariser: summary +    192 in 00:00:30 =    6.4/s Avg:  5646 Min:     2 Max: 240200 Err:     1 (0.52%) Active: 36 Started: 100 Finished: 64
+2021-01-31 08:32:30,381 INFO o.a.j.r.Summariser: summary =  35110 in 00:09:32 =   61.4/s Avg:   916 Min:     1 Max: 240211 Err:    24 (0.07%)
+2021-01-31 08:32:54,479 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-56
+2021-01-31 08:32:54,479 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-56
+2021-01-31 08:33:04,442 INFO o.a.j.r.Summariser: summary +    234 in 00:00:34 =    6.9/s Avg:  6137 Min:     1 Max: 240206 Err:     1 (0.43%) Active: 35 Started: 100 Finished: 65
+2021-01-31 08:33:04,443 INFO o.a.j.r.Summariser: summary =  35344 in 00:10:06 =   58.3/s Avg:   951 Min:     1 Max: 240211 Err:    25 (0.07%)
+2021-01-31 08:33:11,858 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-34
+2021-01-31 08:33:11,858 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-34
+2021-01-31 08:33:19,297 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-16
+2021-01-31 08:33:19,297 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-16
+2021-01-31 08:33:27,434 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-81
+2021-01-31 08:33:27,434 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-81
+2021-01-31 08:33:30,002 INFO o.a.j.r.Summariser: summary +    346 in 00:00:26 =   13.5/s Avg:  2889 Min:     1 Max: 169709 Err:     0 (0.00%) Active: 32 Started: 100 Finished: 68
+2021-01-31 08:33:30,002 INFO o.a.j.r.Summariser: summary =  35690 in 00:10:32 =   56.5/s Avg:   969 Min:     1 Max: 240211 Err:    25 (0.07%)
+2021-01-31 08:34:00,137 INFO o.a.j.r.Summariser: summary +    151 in 00:00:30 =    5.0/s Avg:  7453 Min:     1 Max: 121560 Err:     0 (0.00%) Active: 32 Started: 100 Finished: 68
+2021-01-31 08:34:00,138 INFO o.a.j.r.Summariser: summary =  35841 in 00:11:02 =   54.2/s Avg:   997 Min:     1 Max: 240211 Err:    25 (0.07%)
+2021-01-31 08:34:31,300 INFO o.a.j.r.Summariser: summary +    142 in 00:00:31 =    4.6/s Avg:  4546 Min:     1 Max: 97795 Err:     1 (0.70%) Active: 32 Started: 100 Finished: 68
+2021-01-31 08:34:31,300 INFO o.a.j.r.Summariser: summary =  35983 in 00:11:33 =   51.9/s Avg:  1011 Min:     1 Max: 240211 Err:    26 (0.07%)
+2021-01-31 08:35:00,429 INFO o.a.j.r.Summariser: summary +    127 in 00:00:29 =    4.4/s Avg:  8142 Min:     1 Max: 206453 Err:     0 (0.00%) Active: 32 Started: 100 Finished: 68
+2021-01-31 08:35:00,429 INFO o.a.j.r.Summariser: summary =  36110 in 00:12:02 =   50.0/s Avg:  1036 Min:     1 Max: 240211 Err:    26 (0.07%)
+2021-01-31 08:35:32,221 INFO o.a.j.r.Summariser: summary +    210 in 00:00:32 =    6.6/s Avg:  3603 Min:     1 Max: 104862 Err:     0 (0.00%) Active: 32 Started: 100 Finished: 68
+2021-01-31 08:35:32,221 INFO o.a.j.r.Summariser: summary =  36320 in 00:12:34 =   48.2/s Avg:  1051 Min:     1 Max: 240211 Err:    26 (0.07%)
+2021-01-31 08:36:00,023 INFO o.a.j.r.Summariser: summary +    126 in 00:00:28 =    4.5/s Avg:  9714 Min:     2 Max: 204796 Err:     1 (0.79%) Active: 32 Started: 100 Finished: 68
+2021-01-31 08:36:00,023 INFO o.a.j.r.Summariser: summary =  36446 in 00:13:02 =   46.6/s Avg:  1081 Min:     1 Max: 240211 Err:    27 (0.07%)
+2021-01-31 08:36:00,075 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-21
+2021-01-31 08:36:00,075 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-21
+2021-01-31 08:36:20,312 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-99
+2021-01-31 08:36:20,312 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-99
+2021-01-31 08:36:21,774 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-76
+2021-01-31 08:36:21,774 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-76
+2021-01-31 08:36:32,085 INFO o.a.j.r.Summariser: summary +    114 in 00:00:32 =    3.6/s Avg:  7025 Min:     1 Max: 108703 Err:     1 (0.88%) Active: 29 Started: 100 Finished: 71
+2021-01-31 08:36:32,086 INFO o.a.j.r.Summariser: summary =  36560 in 00:13:34 =   44.9/s Avg:  1099 Min:     1 Max: 240211 Err:    28 (0.08%)
+2021-01-31 08:36:53,580 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-78
+2021-01-31 08:36:53,580 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-78
+2021-01-31 08:37:03,782 INFO o.a.j.r.Summariser: summary +    142 in 00:00:32 =    4.5/s Avg: 11159 Min:     1 Max: 287663 Err:     2 (1.41%) Active: 28 Started: 100 Finished: 72
+2021-01-31 08:37:03,782 INFO o.a.j.r.Summariser: summary =  36702 in 00:14:05 =   43.4/s Avg:  1138 Min:     1 Max: 287663 Err:    30 (0.08%)
+2021-01-31 08:38:00,057 INFO o.a.j.r.Summariser: summary +     73 in 00:00:56 =    1.3/s Avg: 16019 Min:     2 Max: 83142 Err:     0 (0.00%) Active: 28 Started: 100 Finished: 72
+2021-01-31 08:38:00,057 INFO o.a.j.r.Summariser: summary =  36775 in 00:15:02 =   40.8/s Avg:  1168 Min:     1 Max: 287663 Err:    30 (0.08%)
+2021-01-31 08:38:30,227 INFO o.a.j.r.Summariser: summary +     73 in 00:00:30 =    2.4/s Avg: 13450 Min:     2 Max: 87540 Err:     0 (0.00%) Active: 28 Started: 100 Finished: 72
+2021-01-31 08:38:30,227 INFO o.a.j.r.Summariser: summary =  36848 in 00:15:32 =   39.5/s Avg:  1192 Min:     1 Max: 287663 Err:    30 (0.08%)
+2021-01-31 08:39:00,709 INFO o.a.j.r.Summariser: summary +     81 in 00:00:30 =    2.7/s Avg:  8612 Min:     2 Max: 105581 Err:     1 (1.23%) Active: 28 Started: 100 Finished: 72
+2021-01-31 08:39:00,710 INFO o.a.j.r.Summariser: summary =  36929 in 00:16:02 =   38.4/s Avg:  1208 Min:     1 Max: 287663 Err:    31 (0.08%)
+2021-01-31 08:39:32,755 INFO o.a.j.r.Summariser: summary +     25 in 00:00:32 =    0.8/s Avg: 23073 Min:     2 Max: 73778 Err:     0 (0.00%) Active: 28 Started: 100 Finished: 72
+2021-01-31 08:39:32,755 INFO o.a.j.r.Summariser: summary =  36954 in 00:16:34 =   37.2/s Avg:  1223 Min:     1 Max: 287663 Err:    31 (0.08%)
+2021-01-31 08:40:30,763 INFO o.a.j.r.Summariser: summary +    152 in 00:00:58 =    2.6/s Avg: 11654 Min:     1 Max: 240522 Err:     2 (1.32%) Active: 28 Started: 100 Finished: 72
+2021-01-31 08:40:30,764 INFO o.a.j.r.Summariser: summary =  37106 in 00:17:32 =   35.3/s Avg:  1266 Min:     1 Max: 287663 Err:    33 (0.09%)
+2021-01-31 08:41:00,177 INFO o.a.j.r.Summariser: summary +     73 in 00:00:29 =    2.5/s Avg: 10012 Min:     1 Max: 105252 Err:     1 (1.37%) Active: 28 Started: 100 Finished: 72
+2021-01-31 08:41:00,178 INFO o.a.j.r.Summariser: summary =  37179 in 00:18:02 =   34.4/s Avg:  1283 Min:     1 Max: 287663 Err:    34 (0.09%)
+2021-01-31 08:41:26,402 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-2
+2021-01-31 08:41:26,402 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-2
+2021-01-31 08:42:00,592 INFO o.a.j.r.Summariser: summary +    500 in 00:01:00 =    8.3/s Avg:  3551 Min:     1 Max: 182847 Err:     0 (0.00%) Active: 27 Started: 100 Finished: 73
+2021-01-31 08:42:00,592 INFO o.a.j.r.Summariser: summary =  37679 in 00:19:02 =   33.0/s Avg:  1313 Min:     1 Max: 287663 Err:    34 (0.09%)
+2021-01-31 08:42:00,648 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-55
+2021-01-31 08:42:00,648 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-55
+2021-01-31 08:42:19,443 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-95
+2021-01-31 08:42:19,443 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-95
+2021-01-31 08:42:22,623 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-98
+2021-01-31 08:42:22,623 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-98
+2021-01-31 08:42:31,817 INFO o.a.j.r.Summariser: summary +    120 in 00:00:31 =    3.8/s Avg:  5942 Min:     1 Max: 240339 Err:     1 (0.83%) Active: 24 Started: 100 Finished: 76
+2021-01-31 08:42:31,817 INFO o.a.j.r.Summariser: summary =  37799 in 00:19:33 =   32.2/s Avg:  1328 Min:     1 Max: 287663 Err:    35 (0.09%)
+2021-01-31 08:43:00,621 INFO o.a.j.r.Summariser: summary +     80 in 00:00:29 =    2.8/s Avg: 16000 Min:     2 Max: 209528 Err:     0 (0.00%) Active: 24 Started: 100 Finished: 76
+2021-01-31 08:43:00,621 INFO o.a.j.r.Summariser: summary =  37879 in 00:20:02 =   31.5/s Avg:  1359 Min:     1 Max: 287663 Err:    35 (0.09%)
+2021-01-31 08:43:05,470 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-65
+2021-01-31 08:43:05,471 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-65
+2021-01-31 08:43:31,731 INFO o.a.j.r.Summariser: summary +    127 in 00:00:31 =    4.1/s Avg:  6885 Min:     2 Max: 317812 Err:     2 (1.57%) Active: 23 Started: 100 Finished: 77
+2021-01-31 08:43:31,731 INFO o.a.j.r.Summariser: summary =  38006 in 00:20:33 =   30.8/s Avg:  1377 Min:     1 Max: 317812 Err:    37 (0.10%)
+2021-01-31 08:43:55,408 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-94
+2021-01-31 08:43:55,408 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-94
+2021-01-31 08:44:02,104 INFO o.a.j.r.Summariser: summary +    390 in 00:00:30 =   12.8/s Avg:  1605 Min:     2 Max: 103532 Err:     0 (0.00%) Active: 22 Started: 100 Finished: 78
+2021-01-31 08:44:02,104 INFO o.a.j.r.Summariser: summary =  38396 in 00:21:04 =   30.4/s Avg:  1380 Min:     1 Max: 317812 Err:    37 (0.10%)
+2021-01-31 08:44:31,235 INFO o.a.j.r.Summariser: summary +     34 in 00:00:29 =    1.2/s Avg: 14818 Min:     2 Max: 74805 Err:     0 (0.00%) Active: 22 Started: 100 Finished: 78
+2021-01-31 08:44:31,235 INFO o.a.j.r.Summariser: summary =  38430 in 00:21:33 =   29.7/s Avg:  1391 Min:     1 Max: 317812 Err:    37 (0.10%)
+2021-01-31 08:44:47,338 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-5
+2021-01-31 08:44:47,338 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-5
+2021-01-31 08:44:51,968 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-97
+2021-01-31 08:44:51,968 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-97
+2021-01-31 08:45:00,614 INFO o.a.j.r.Summariser: summary +    335 in 00:00:29 =   11.4/s Avg:  2690 Min:     1 Max: 137452 Err:     0 (0.00%) Active: 20 Started: 100 Finished: 80
+2021-01-31 08:45:00,614 INFO o.a.j.r.Summariser: summary =  38765 in 00:22:02 =   29.3/s Avg:  1403 Min:     1 Max: 317812 Err:    37 (0.10%)
+2021-01-31 08:45:01,252 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-8
+2021-01-31 08:45:01,252 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-8
+2021-01-31 08:45:30,949 INFO o.a.j.r.Summariser: summary +     72 in 00:00:30 =    2.4/s Avg:  7101 Min:     2 Max: 137769 Err:     0 (0.00%) Active: 19 Started: 100 Finished: 81
+2021-01-31 08:45:30,951 INFO o.a.j.r.Summariser: summary =  38837 in 00:22:33 =   28.7/s Avg:  1413 Min:     1 Max: 317812 Err:    37 (0.10%)
+2021-01-31 08:46:04,317 INFO o.a.j.r.Summariser: summary +    143 in 00:00:33 =    4.3/s Avg:  3553 Min:     1 Max: 63628 Err:     0 (0.00%) Active: 19 Started: 100 Finished: 81
+2021-01-31 08:46:04,318 INFO o.a.j.r.Summariser: summary =  38980 in 00:23:06 =   28.1/s Avg:  1421 Min:     1 Max: 317812 Err:    37 (0.09%)
+2021-01-31 08:46:11,981 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-58
+2021-01-31 08:46:11,981 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-58
+2021-01-31 08:46:13,265 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-25
+2021-01-31 08:46:13,265 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-25
+2021-01-31 08:46:49,382 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-14
+2021-01-31 08:46:49,382 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-14
+2021-01-31 08:47:02,067 INFO o.a.j.r.Summariser: summary +    198 in 00:00:58 =    3.4/s Avg:  6442 Min:     2 Max: 236023 Err:     0 (0.00%) Active: 16 Started: 100 Finished: 84
+2021-01-31 08:47:02,067 INFO o.a.j.r.Summariser: summary =  39178 in 00:24:04 =   27.1/s Avg:  1446 Min:     1 Max: 317812 Err:    37 (0.09%)
+2021-01-31 08:48:00,543 INFO o.a.j.r.Summariser: summary +    110 in 00:00:58 =    1.9/s Avg:  8030 Min:     2 Max: 127453 Err:     0 (0.00%) Active: 16 Started: 100 Finished: 84
+2021-01-31 08:48:00,543 INFO o.a.j.r.Summariser: summary =  39288 in 00:25:02 =   26.2/s Avg:  1465 Min:     1 Max: 317812 Err:    37 (0.09%)
+2021-01-31 08:48:11,423 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-73
+2021-01-31 08:48:11,423 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-73
+2021-01-31 08:48:31,188 INFO o.a.j.r.Summariser: summary +     98 in 00:00:31 =    3.2/s Avg:  7118 Min:     2 Max: 233861 Err:     1 (1.02%) Active: 15 Started: 100 Finished: 85
+2021-01-31 08:48:31,189 INFO o.a.j.r.Summariser: summary =  39386 in 00:25:33 =   25.7/s Avg:  1479 Min:     1 Max: 317812 Err:    38 (0.10%)
+2021-01-31 08:48:48,218 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-40
+2021-01-31 08:48:48,219 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-40
+2021-01-31 08:48:50,474 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-61
+2021-01-31 08:48:50,474 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-61
+2021-01-31 08:48:56,485 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-15
+2021-01-31 08:48:56,485 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-15
+2021-01-31 08:49:01,020 INFO o.a.j.r.Summariser: summary +     76 in 00:00:30 =    2.5/s Avg:  5627 Min:     2 Max: 114472 Err:     0 (0.00%) Active: 12 Started: 100 Finished: 88
+2021-01-31 08:49:01,021 INFO o.a.j.r.Summariser: summary =  39462 in 00:26:03 =   25.3/s Avg:  1487 Min:     1 Max: 317812 Err:    38 (0.10%)
+2021-01-31 08:49:31,878 INFO o.a.j.r.Summariser: summary +     59 in 00:00:31 =    1.9/s Avg:  9205 Min:     2 Max: 139623 Err:     0 (0.00%) Active: 12 Started: 100 Finished: 88
+2021-01-31 08:49:31,878 INFO o.a.j.r.Summariser: summary =  39521 in 00:26:33 =   24.8/s Avg:  1498 Min:     1 Max: 317812 Err:    38 (0.10%)
+2021-01-31 08:50:05,682 INFO o.a.j.r.Summariser: summary +     24 in 00:00:34 =    0.7/s Avg: 13175 Min:     2 Max: 50784 Err:     0 (0.00%) Active: 12 Started: 100 Finished: 88
+2021-01-31 08:50:05,682 INFO o.a.j.r.Summariser: summary =  39545 in 00:27:07 =   24.3/s Avg:  1506 Min:     1 Max: 317812 Err:    38 (0.10%)
+2021-01-31 08:50:28,263 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-52
+2021-01-31 08:50:28,263 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-52
+2021-01-31 08:50:31,313 INFO o.a.j.r.Summariser: summary +     44 in 00:00:26 =    1.7/s Avg:  4820 Min:     2 Max: 55124 Err:     0 (0.00%) Active: 11 Started: 100 Finished: 89
+2021-01-31 08:50:31,313 INFO o.a.j.r.Summariser: summary =  39589 in 00:27:33 =   24.0/s Avg:  1509 Min:     1 Max: 317812 Err:    38 (0.10%)
+2021-01-31 08:51:03,966 INFO o.a.j.r.Summariser: summary +     64 in 00:00:33 =    2.0/s Avg:  7089 Min:     2 Max: 98191 Err:     0 (0.00%) Active: 11 Started: 100 Finished: 89
+2021-01-31 08:51:03,967 INFO o.a.j.r.Summariser: summary =  39653 in 00:28:06 =   23.5/s Avg:  1518 Min:     1 Max: 317812 Err:    38 (0.10%)
+2021-01-31 08:51:13,697 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-92
+2021-01-31 08:51:13,697 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-92
+2021-01-31 08:51:29,194 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-41
+2021-01-31 08:51:29,194 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-41
+2021-01-31 08:51:47,439 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-22
+2021-01-31 08:51:47,439 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-22
+2021-01-31 08:52:04,566 INFO o.a.j.r.Summariser: summary +    291 in 00:01:01 =    4.8/s Avg:  2131 Min:     1 Max: 118305 Err:     0 (0.00%) Active: 8 Started: 100 Finished: 92
+2021-01-31 08:52:04,566 INFO o.a.j.r.Summariser: summary =  39944 in 00:29:06 =   22.9/s Avg:  1523 Min:     1 Max: 317812 Err:    38 (0.10%)
+2021-01-31 08:52:32,264 INFO o.a.j.r.Summariser: summary +     68 in 00:00:28 =    2.5/s Avg:  3795 Min:     2 Max: 77542 Err:     1 (1.47%) Active: 8 Started: 100 Finished: 92
+2021-01-31 08:52:32,264 INFO o.a.j.r.Summariser: summary =  40012 in 00:29:34 =   22.6/s Avg:  1527 Min:     1 Max: 317812 Err:    39 (0.10%)
+2021-01-31 08:53:06,607 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-68
+2021-01-31 08:53:06,607 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-68
+2021-01-31 08:53:17,416 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-80
+2021-01-31 08:53:17,416 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-80
+2021-01-31 08:53:33,078 INFO o.a.j.r.Summariser: summary +     87 in 00:01:01 =    1.4/s Avg:  5872 Min:     1 Max: 118986 Err:     0 (0.00%) Active: 6 Started: 100 Finished: 94
+2021-01-31 08:53:33,078 INFO o.a.j.r.Summariser: summary =  40099 in 00:30:35 =   21.9/s Avg:  1536 Min:     1 Max: 317812 Err:    39 (0.10%)
+2021-01-31 08:53:50,230 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-90
+2021-01-31 08:53:50,230 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-90
+2021-01-31 08:56:32,144 INFO o.a.j.r.Summariser: summary +    168 in 00:02:59 =    0.9/s Avg:  4654 Min:     1 Max: 120338 Err:     1 (0.60%) Active: 5 Started: 100 Finished: 95
+2021-01-31 08:56:32,144 INFO o.a.j.r.Summariser: summary =  40267 in 00:33:34 =   20.0/s Avg:  1549 Min:     1 Max: 317812 Err:    40 (0.10%)
+2021-01-31 08:56:45,835 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-63
+2021-01-31 08:56:45,835 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-63
+2021-01-31 08:58:03,746 INFO o.a.j.r.Summariser: summary +    178 in 00:01:32 =    1.9/s Avg:  3585 Min:     2 Max: 240264 Err:     1 (0.56%) Active: 4 Started: 100 Finished: 96
+2021-01-31 08:58:03,746 INFO o.a.j.r.Summariser: summary =  40445 in 00:35:05 =   19.2/s Avg:  1558 Min:     1 Max: 317812 Err:    41 (0.10%)
+2021-01-31 09:00:33,632 INFO o.a.j.r.Summariser: summary +     36 in 00:02:30 =    0.2/s Avg: 15321 Min:     2 Max: 112086 Err:     0 (0.00%) Active: 4 Started: 100 Finished: 96
+2021-01-31 09:00:33,632 INFO o.a.j.r.Summariser: summary =  40481 in 00:37:35 =   17.9/s Avg:  1570 Min:     1 Max: 317812 Err:    41 (0.10%)
+2021-01-31 09:00:33,681 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-96
+2021-01-31 09:00:33,681 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-96
+2021-01-31 09:01:04,448 INFO o.a.j.r.Summariser: summary +     20 in 00:00:31 =    0.6/s Avg:  7634 Min:     1 Max: 72468 Err:     0 (0.00%) Active: 3 Started: 100 Finished: 97
+2021-01-31 09:01:04,448 INFO o.a.j.r.Summariser: summary =  40501 in 00:38:06 =   17.7/s Avg:  1573 Min:     1 Max: 317812 Err:    41 (0.10%)
+2021-01-31 09:01:31,748 INFO o.a.j.r.Summariser: summary +     34 in 00:00:27 =    1.2/s Avg:  2635 Min:     2 Max: 31117 Err:     0 (0.00%) Active: 3 Started: 100 Finished: 97
+2021-01-31 09:01:31,748 INFO o.a.j.r.Summariser: summary =  40535 in 00:38:33 =   17.5/s Avg:  1574 Min:     1 Max: 317812 Err:    41 (0.10%)
+2021-01-31 09:03:18,099 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-12
+2021-01-31 09:03:18,099 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-12
+2021-01-31 09:03:58,027 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-17
+2021-01-31 09:03:58,027 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-17
+2021-01-31 09:06:02,387 INFO o.a.j.r.Summariser: summary +     42 in 00:04:31 =    0.2/s Avg: 13066 Min:     2 Max: 106620 Err:     0 (0.00%) Active: 1 Started: 100 Finished: 99
+2021-01-31 09:06:02,387 INFO o.a.j.r.Summariser: summary =  40577 in 00:43:04 =   15.7/s Avg:  1586 Min:     1 Max: 317812 Err:    41 (0.10%)
+2021-01-31 09:12:05,783 INFO o.a.j.r.Summariser: summary +      7 in 00:06:03 =    0.0/s Avg: 51913 Min:  3538 Max: 97011 Err:     0 (0.00%) Active: 1 Started: 100 Finished: 99
+2021-01-31 09:12:05,783 INFO o.a.j.r.Summariser: summary =  40584 in 00:49:07 =   13.8/s Avg:  1595 Min:     1 Max: 317812 Err:    41 (0.10%)
+2021-01-31 09:16:14,607 INFO o.a.j.t.JMeterThread: Thread is done: Grupo de Hilos 1-3
+2021-01-31 09:16:14,607 INFO o.a.j.t.JMeterThread: Thread finished: Grupo de Hilos 1-3
+2021-01-31 09:16:14,607 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2021-01-31 09:16:14,608 INFO o.a.j.r.Summariser: summary +     16 in 00:04:09 =    0.1/s Avg: 15551 Min:     2 Max: 248759 Err:     0 (0.00%) Active: 0 Started: 100 Finished: 100
+2021-01-31 09:16:14,608 INFO o.a.j.r.Summariser: summary =  40600 in 00:53:16 =   12.7/s Avg:  1600 Min:     1 Max: 317812 Err:    41 (0.10%)
+2021-01-31 09:16:14,608 INFO o.a.j.JMeter: Generating Dashboard
+2021-01-31 09:16:14,608 INFO o.a.j.r.d.ReportGenerator: Flushing result collector before report Generation
+2021-01-31 09:16:14,622 INFO o.a.j.r.p.NormalizerSampleConsumer: Using format, 'ms', to parse timeStamp field
+2021-01-31 09:16:15,807 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): beginDate produced 0 samples
+2021-01-31 09:16:15,807 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.AggregateConsumer#stopProducing(): endDate produced 0 samples
+2021-01-31 09:16:15,811 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ApdexSummaryConsumer#stopProducing(): apdexSummary produced 0 samples
+2021-01-31 09:16:15,811 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.RequestsSummaryConsumer#stopProducing(): requestsSummary produced 0 samples
+2021-01-31 09:16:15,833 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.StatisticsSummaryConsumer#stopProducing(): statisticsSummary produced 0 samples
+2021-01-31 09:16:15,840 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.Top5ErrorsBySamplerConsumer#stopProducing(): top5ErrorsBySampler produced 0 samples
+2021-01-31 09:16:15,840 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.ErrorsSummaryConsumer#stopProducing(): errorsSummary produced 0 samples
+2021-01-31 09:16:15,840 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.HitsPerSecondGraphConsumer#stopProducing(): hitsPerSecond produced 0 samples
+2021-01-31 09:16:16,096 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyVSRequestGraphConsumer#stopProducing(): latencyVsRequest produced 0 samples
+2021-01-31 09:16:16,099 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.SyntheticResponseTimeDistributionGraphConsumer#stopProducing(): syntheticResponseTimeDistribution produced 0 samples
+2021-01-31 09:16:16,100 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.BytesThroughputGraphConsumer#stopProducing(): bytesThroughputOverTime produced 0 samples
+2021-01-31 09:16:16,100 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.CodesPerSecondGraphConsumer#stopProducing(): codesPerSecond produced 0 samples
+2021-01-31 09:16:16,305 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeVSRequestGraphConsumer#stopProducing(): responseTimeVsRequest produced 0 samples
+2021-01-31 09:16:16,306 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): startIntervalControlerFilter produced 288428 samples
+2021-01-31 09:16:16,306 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TotalTPSGraphConsumer#stopProducing(): totalTPS produced 0 samples
+2021-01-31 09:16:16,306 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ActiveThreadsGraphConsumer#stopProducing(): activeThreadsOverTime produced 0 samples
+2021-01-31 09:16:16,306 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TimeVSThreadGraphConsumer#stopProducing(): timeVsThreads produced 0 samples
+2021-01-31 09:16:16,331 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeDistributionGraphConsumer#stopProducing(): responseTimeDistribution produced 0 samples
+2021-01-31 09:16:16,334 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.TransactionsPerSecondGraphConsumer#stopProducing(): transactionsPerSecond produced 0 samples
+2021-01-31 09:16:16,338 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesGraphConsumer#stopProducing(): responseTimePercentiles produced 0 samples
+2021-01-31 09:16:16,373 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimePercentilesOverTimeGraphConsumer#stopProducing(): responseTimePercentilesOverTime produced 0 samples
+2021-01-31 09:16:16,375 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ResponseTimeOverTimeGraphConsumer#stopProducing(): responseTimesOverTime produced 0 samples
+2021-01-31 09:16:16,379 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.ConnectTimeOverTimeGraphConsumer#stopProducing(): connectTimeOverTime produced 0 samples
+2021-01-31 09:16:16,383 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.graph.impl.LatencyOverTimeGraphConsumer#stopProducing(): latenciesOverTime produced 0 samples
+2021-01-31 09:16:16,387 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): nameFilter produced 618060 samples
+2021-01-31 09:16:16,387 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.FilterConsumer#stopProducing(): dateRangeFilter produced 123612 samples
+2021-01-31 09:16:16,387 INFO o.a.j.r.p.AbstractSampleConsumer: class org.apache.jmeter.report.processor.NormalizerSampleConsumer#stopProducing(): normalizer produced 41204 samples
+2021-01-31 09:16:16,388 INFO o.a.j.r.p.CsvFileSampleSource: produce(): 41204 samples produced in 1s 735 ms on channel 0
+2021-01-31 09:16:16,388 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'json' of className:'org.apache.jmeter.report.dashboard.JsonExporter'
+2021-01-31 09:16:16,390 INFO o.a.j.r.d.JsonExporter: Found data for consumer statisticsSummary in context
+2021-01-31 09:16:16,390 INFO o.a.j.r.d.JsonExporter: Creating statistics for overall
+2021-01-31 09:16:16,391 INFO o.a.j.r.d.JsonExporter: Creating statistics for other transactions
+2021-01-31 09:16:16,392 INFO o.a.j.r.d.JsonExporter: Checking output folder
+2021-01-31 09:16:16,393 INFO o.a.j.r.d.JsonExporter: Writing statistics JSON to /home/ubuntu/jmeter/tests/compra2/report-2021-01-31-08-22/statistics.json
+2021-01-31 09:16:16,605 INFO o.a.j.r.d.ReportGenerator: Exporting data using exporter:'html' of className:'org.apache.jmeter.report.dashboard.HtmlTemplateExporter'
+2021-01-31 09:16:16,609 INFO o.a.j.r.d.HtmlTemplateExporter: Will generate dashboard in folder: /home/ubuntu/jmeter/tests/compra2/report-2021-01-31-08-22
+2021-01-31 09:16:17,038 INFO o.a.j.r.d.HtmlTemplateExporter: Report will be generated in: /home/ubuntu/jmeter/tests/compra2/report-2021-01-31-08-22, creating folder structure
+2021-01-31 09:16:17,043 INFO o.a.j.r.d.TemplateVisitor: Copying folder from '/opt/apache-jmeter-5.1.1/bin/report-template' to '/home/ubuntu/jmeter/tests/compra2/report-2021-01-31-08-22', got message:[/home/ubuntu/jmeter/tests/compra2/report-2021-01-31-08-22/statistics.json], found non empty folder with following content {}, will be ignored
+2021-01-31 09:16:17,406 INFO o.a.j.JMeter: Dashboard generated

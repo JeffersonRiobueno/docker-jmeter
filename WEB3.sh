@@ -7,8 +7,8 @@
 # See also: http://stackoverflow.com/questions/14317715/jmeter-changing-user-defined-variables-from-command-line
 
 export TARGET_TOKEN="25c0dd90fc4ac6c135df0d02ab5f24738ecc4286da"
-export TARGET_THREADS="200"
-export TARGET_LOOPS="5"
+export TARGET_THREADS="100"
+export TARGET_LOOPS="2"
 export TARGET_TIME="60"
 
 T_DIR=tests/compra3

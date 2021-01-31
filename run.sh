@@ -2,7 +2,7 @@
 #
 # Run JMeter Docker image with options
 
-NAME="jmeter"
+NAME="jmeter3"
 IMAGE="riobueno/jmeter:5.1.1"
 
 # Finally run
