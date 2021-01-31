@@ -594,3 +594,91 @@
 2021-01-31 07:02:30,032 INFO o.a.j.r.Summariser: summary = 141183 in 00:22:58 =  102.4/s Avg:  1906 Min:     1 Max: 465462 Err:  1288 (0.91%)
 2021-01-31 07:03:00,116 INFO o.a.j.r.Summariser: summary +    269 in 00:00:30 =    8.9/s Avg: 20022 Min:     1 Max: 240627 Err:    16 (5.95%) Active: 171 Started: 250 Finished: 79
 2021-01-31 07:03:00,116 INFO o.a.j.r.Summariser: summary = 141452 in 00:23:28 =  100.4/s Avg:  1941 Min:     1 Max: 465462 Err:  1304 (0.92%)
+2021-01-31 07:03:30,001 INFO o.a.j.r.Summariser: summary +    202 in 00:00:30 =    6.8/s Avg: 23381 Min:     1 Max: 565432 Err:    13 (6.44%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:03:30,001 INFO o.a.j.r.Summariser: summary = 141654 in 00:23:58 =   98.5/s Avg:  1971 Min:     1 Max: 565432 Err:  1317 (0.93%)
+2021-01-31 07:04:00,066 INFO o.a.j.r.Summariser: summary +    547 in 00:00:30 =   18.2/s Avg: 10195 Min:     2 Max: 574079 Err:    16 (2.93%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:04:00,066 INFO o.a.j.r.Summariser: summary = 142201 in 00:24:28 =   96.8/s Avg:  2003 Min:     1 Max: 574079 Err:  1333 (0.94%)
+2021-01-31 07:04:30,417 INFO o.a.j.r.Summariser: summary +    461 in 00:00:30 =   15.2/s Avg: 13335 Min:     2 Max: 680137 Err:    14 (3.04%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:04:30,417 INFO o.a.j.r.Summariser: summary = 142662 in 00:24:59 =   95.2/s Avg:  2039 Min:     1 Max: 680137 Err:  1347 (0.94%)
+2021-01-31 07:05:00,258 INFO o.a.j.r.Summariser: summary +    528 in 00:00:30 =   17.7/s Avg: 10920 Min:     1 Max: 697611 Err:    14 (2.65%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:05:00,258 INFO o.a.j.r.Summariser: summary = 143190 in 00:25:29 =   93.7/s Avg:  2072 Min:     1 Max: 697611 Err:  1361 (0.95%)
+2021-01-31 07:05:30,210 INFO o.a.j.r.Summariser: summary +    116 in 00:00:30 =    3.9/s Avg: 35120 Min:     2 Max: 240616 Err:    13 (11.21%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:05:30,210 INFO o.a.j.r.Summariser: summary = 143306 in 00:25:59 =   91.9/s Avg:  2099 Min:     1 Max: 697611 Err:  1374 (0.96%)
+2021-01-31 07:06:00,650 INFO o.a.j.r.Summariser: summary +    178 in 00:00:30 =    5.8/s Avg: 21814 Min:     1 Max: 240783 Err:     8 (4.49%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:06:00,650 INFO o.a.j.r.Summariser: summary = 143484 in 00:26:29 =   90.3/s Avg:  2123 Min:     1 Max: 697611 Err:  1382 (0.96%)
+2021-01-31 07:06:30,256 INFO o.a.j.r.Summariser: summary +    177 in 00:00:30 =    6.0/s Avg: 26361 Min:     2 Max: 429120 Err:    15 (8.47%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:06:30,256 INFO o.a.j.r.Summariser: summary = 143661 in 00:26:59 =   88.8/s Avg:  2153 Min:     1 Max: 697611 Err:  1397 (0.97%)
+2021-01-31 07:07:00,321 INFO o.a.j.r.Summariser: summary +    131 in 00:00:30 =    4.4/s Avg: 21631 Min:     2 Max: 240773 Err:    10 (7.63%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:07:00,321 INFO o.a.j.r.Summariser: summary = 143792 in 00:27:29 =   87.2/s Avg:  2171 Min:     1 Max: 697611 Err:  1407 (0.98%)
+2021-01-31 07:07:30,267 INFO o.a.j.r.Summariser: summary +    159 in 00:00:30 =    5.3/s Avg: 31617 Min:     1 Max: 551385 Err:    12 (7.55%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:07:30,267 INFO o.a.j.r.Summariser: summary = 143951 in 00:27:59 =   85.8/s Avg:  2204 Min:     1 Max: 697611 Err:  1419 (0.99%)
+2021-01-31 07:08:00,595 INFO o.a.j.r.Summariser: summary +    195 in 00:00:30 =    6.4/s Avg: 27447 Min:     1 Max: 459519 Err:    20 (10.26%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:08:00,595 INFO o.a.j.r.Summariser: summary = 144146 in 00:28:29 =   84.3/s Avg:  2238 Min:     1 Max: 697611 Err:  1439 (1.00%)
+2021-01-31 07:08:31,006 INFO o.a.j.r.Summariser: summary +    314 in 00:00:30 =   10.3/s Avg: 16639 Min:     1 Max: 629712 Err:    17 (5.41%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:08:31,007 INFO o.a.j.r.Summariser: summary = 144460 in 00:28:59 =   83.1/s Avg:  2269 Min:     1 Max: 697611 Err:  1456 (1.01%)
+2021-01-31 07:09:01,367 INFO o.a.j.r.Summariser: summary +    288 in 00:00:30 =    9.5/s Avg: 16462 Min:     1 Max: 316017 Err:    17 (5.90%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:09:01,367 INFO o.a.j.r.Summariser: summary = 144748 in 00:29:30 =   81.8/s Avg:  2297 Min:     1 Max: 697611 Err:  1473 (1.02%)
+2021-01-31 07:09:30,548 INFO o.a.j.r.Summariser: summary +    262 in 00:00:29 =    9.0/s Avg: 16479 Min:     1 Max: 240670 Err:    15 (5.73%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:09:30,548 INFO o.a.j.r.Summariser: summary = 145010 in 00:29:59 =   80.6/s Avg:  2323 Min:     1 Max: 697611 Err:  1488 (1.03%)
+2021-01-31 07:10:00,344 INFO o.a.j.r.Summariser: summary +    398 in 00:00:30 =   13.4/s Avg: 20037 Min:     1 Max: 573737 Err:    25 (6.28%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:10:00,345 INFO o.a.j.r.Summariser: summary = 145408 in 00:30:29 =   79.5/s Avg:  2371 Min:     1 Max: 697611 Err:  1513 (1.04%)
+2021-01-31 07:10:31,133 INFO o.a.j.r.Summariser: summary +    256 in 00:00:31 =    8.3/s Avg: 20045 Min:     2 Max: 448234 Err:    17 (6.64%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:10:31,133 INFO o.a.j.r.Summariser: summary = 145664 in 00:30:59 =   78.3/s Avg:  2402 Min:     1 Max: 697611 Err:  1530 (1.05%)
+2021-01-31 07:11:01,278 INFO o.a.j.r.Summariser: summary +    202 in 00:00:30 =    6.7/s Avg: 25189 Min:     2 Max: 799499 Err:    10 (4.95%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:11:01,278 INFO o.a.j.r.Summariser: summary = 145866 in 00:31:30 =   77.2/s Avg:  2434 Min:     1 Max: 799499 Err:  1540 (1.06%)
+2021-01-31 07:11:30,408 INFO o.a.j.r.Summariser: summary +    326 in 00:00:29 =   11.2/s Avg: 17182 Min:     2 Max: 480184 Err:    17 (5.21%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:11:30,408 INFO o.a.j.r.Summariser: summary = 146192 in 00:31:59 =   76.2/s Avg:  2467 Min:     1 Max: 799499 Err:  1557 (1.07%)
+2021-01-31 07:12:00,089 INFO o.a.j.r.Summariser: summary +    312 in 00:00:30 =   10.5/s Avg: 13534 Min:     2 Max: 402993 Err:    16 (5.13%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:12:00,089 INFO o.a.j.r.Summariser: summary = 146504 in 00:32:28 =   75.2/s Avg:  2490 Min:     1 Max: 799499 Err:  1573 (1.07%)
+2021-01-31 07:12:30,320 INFO o.a.j.r.Summariser: summary +    292 in 00:00:30 =    9.7/s Avg: 18126 Min:     1 Max: 447086 Err:    19 (6.51%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:12:30,320 INFO o.a.j.r.Summariser: summary = 146796 in 00:32:59 =   74.2/s Avg:  2521 Min:     1 Max: 799499 Err:  1592 (1.08%)
+2021-01-31 07:13:01,826 INFO o.a.j.r.Summariser: summary +    454 in 00:00:32 =   14.4/s Avg: 18008 Min:     1 Max: 573602 Err:    24 (5.29%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:13:01,827 INFO o.a.j.r.Summariser: summary = 147250 in 00:33:30 =   73.3/s Avg:  2569 Min:     1 Max: 799499 Err:  1616 (1.10%)
+2021-01-31 07:13:30,129 INFO o.a.j.r.Summariser: summary +    411 in 00:00:28 =   14.5/s Avg:  8199 Min:     1 Max: 520385 Err:    11 (2.68%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:13:30,129 INFO o.a.j.r.Summariser: summary = 147661 in 00:33:58 =   72.4/s Avg:  2585 Min:     1 Max: 799499 Err:  1627 (1.10%)
+2021-01-31 07:14:00,010 INFO o.a.j.r.Summariser: summary +    751 in 00:00:30 =   25.1/s Avg:  7917 Min:     2 Max: 362063 Err:    18 (2.40%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:14:00,011 INFO o.a.j.r.Summariser: summary = 148412 in 00:34:28 =   71.8/s Avg:  2612 Min:     1 Max: 799499 Err:  1645 (1.11%)
+2021-01-31 07:14:30,054 INFO o.a.j.r.Summariser: summary +    556 in 00:00:30 =   18.5/s Avg: 11891 Min:     1 Max: 475705 Err:    17 (3.06%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:14:30,054 INFO o.a.j.r.Summariser: summary = 148968 in 00:34:58 =   71.0/s Avg:  2647 Min:     1 Max: 799499 Err:  1662 (1.12%)
+2021-01-31 07:15:00,114 INFO o.a.j.r.Summariser: summary +    622 in 00:00:30 =   20.7/s Avg:  9213 Min:     2 Max: 478943 Err:    17 (2.73%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:15:00,114 INFO o.a.j.r.Summariser: summary = 149590 in 00:35:28 =   70.3/s Avg:  2674 Min:     1 Max: 799499 Err:  1679 (1.12%)
+2021-01-31 07:15:33,397 INFO o.a.j.r.Summariser: summary +    196 in 00:00:33 =    5.9/s Avg: 23594 Min:     1 Max: 630804 Err:    13 (6.63%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:15:33,398 INFO o.a.j.r.Summariser: summary = 149786 in 00:36:02 =   69.3/s Avg:  2701 Min:     1 Max: 799499 Err:  1692 (1.13%)
+2021-01-31 07:16:03,977 INFO o.a.j.r.Summariser: summary +    131 in 00:00:31 =    4.3/s Avg: 31226 Min:     1 Max: 412104 Err:    11 (8.40%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:16:03,977 INFO o.a.j.r.Summariser: summary = 149917 in 00:36:32 =   68.4/s Avg:  2726 Min:     1 Max: 799499 Err:  1703 (1.14%)
+2021-01-31 07:16:30,104 INFO o.a.j.r.Summariser: summary +    487 in 00:00:26 =   18.6/s Avg:  9222 Min:     1 Max: 286978 Err:    10 (2.05%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:16:30,104 INFO o.a.j.r.Summariser: summary = 150404 in 00:36:58 =   67.8/s Avg:  2747 Min:     1 Max: 799499 Err:  1713 (1.14%)
+2021-01-31 07:17:02,763 INFO o.a.j.r.Summariser: summary +    380 in 00:00:33 =   11.6/s Avg: 13743 Min:     2 Max: 334291 Err:    15 (3.95%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:17:02,764 INFO o.a.j.r.Summariser: summary = 150784 in 00:37:31 =   67.0/s Avg:  2775 Min:     1 Max: 799499 Err:  1728 (1.15%)
+2021-01-31 07:17:30,103 INFO o.a.j.r.Summariser: summary +    325 in 00:00:27 =   11.9/s Avg: 12412 Min:     2 Max: 240340 Err:    16 (4.92%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:17:30,103 INFO o.a.j.r.Summariser: summary = 151109 in 00:37:58 =   66.3/s Avg:  2796 Min:     1 Max: 799499 Err:  1744 (1.15%)
+2021-01-31 07:18:00,277 INFO o.a.j.r.Summariser: summary +    438 in 00:00:30 =   14.5/s Avg: 17963 Min:     1 Max: 479091 Err:    23 (5.25%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:18:00,277 INFO o.a.j.r.Summariser: summary = 151547 in 00:38:29 =   65.6/s Avg:  2839 Min:     1 Max: 799499 Err:  1767 (1.17%)
+2021-01-31 07:18:30,103 INFO o.a.j.r.Summariser: summary +    318 in 00:00:30 =   10.7/s Avg: 18199 Min:     1 Max: 650658 Err:    16 (5.03%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:18:30,104 INFO o.a.j.r.Summariser: summary = 151865 in 00:38:58 =   64.9/s Avg:  2872 Min:     1 Max: 799499 Err:  1783 (1.17%)
+2021-01-31 07:19:00,678 INFO o.a.j.r.Summariser: summary +    362 in 00:00:31 =   11.8/s Avg: 12306 Min:     1 Max: 309122 Err:    14 (3.87%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:19:00,678 INFO o.a.j.r.Summariser: summary = 152227 in 00:39:29 =   64.3/s Avg:  2894 Min:     1 Max: 799499 Err:  1797 (1.18%)
+2021-01-31 07:19:30,070 INFO o.a.j.r.Summariser: summary +    280 in 00:00:29 =    9.5/s Avg: 17798 Min:     2 Max: 240680 Err:    10 (3.57%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:19:30,071 INFO o.a.j.r.Summariser: summary = 152507 in 00:39:58 =   63.6/s Avg:  2921 Min:     1 Max: 799499 Err:  1807 (1.18%)
+2021-01-31 07:20:00,891 INFO o.a.j.r.Summariser: summary +    212 in 00:00:31 =    6.9/s Avg: 24246 Min:     2 Max: 654927 Err:    16 (7.55%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:20:00,891 INFO o.a.j.r.Summariser: summary = 152719 in 00:40:29 =   62.9/s Avg:  2951 Min:     1 Max: 799499 Err:  1823 (1.19%)
+2021-01-31 07:20:30,225 INFO o.a.j.r.Summariser: summary +    464 in 00:00:29 =   15.8/s Avg: 10535 Min:     1 Max: 241677 Err:    14 (3.02%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:20:30,225 INFO o.a.j.r.Summariser: summary = 153183 in 00:40:59 =   62.3/s Avg:  2974 Min:     1 Max: 799499 Err:  1837 (1.20%)
+2021-01-31 07:21:01,393 INFO o.a.j.r.Summariser: summary +    337 in 00:00:31 =   10.8/s Avg: 11136 Min:     1 Max: 535915 Err:    13 (3.86%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:21:01,394 INFO o.a.j.r.Summariser: summary = 153520 in 00:41:30 =   61.7/s Avg:  2992 Min:     1 Max: 799499 Err:  1850 (1.21%)
+2021-01-31 07:21:30,889 INFO o.a.j.r.Summariser: summary +    140 in 00:00:29 =    4.7/s Avg: 31497 Min:     1 Max: 546529 Err:    11 (7.86%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:21:30,889 INFO o.a.j.r.Summariser: summary = 153660 in 00:41:59 =   61.0/s Avg:  3018 Min:     1 Max: 799499 Err:  1861 (1.21%)
+2021-01-31 07:22:00,002 INFO o.a.j.r.Summariser: summary +    193 in 00:00:29 =    6.6/s Avg: 24154 Min:     2 Max: 240632 Err:    15 (7.77%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:22:00,002 INFO o.a.j.r.Summariser: summary = 153853 in 00:42:28 =   60.4/s Avg:  3044 Min:     1 Max: 799499 Err:  1876 (1.22%)
+2021-01-31 07:22:31,167 INFO o.a.j.r.Summariser: summary +    360 in 00:00:31 =   11.6/s Avg: 15997 Min:     1 Max: 631624 Err:    22 (6.11%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:22:31,168 INFO o.a.j.r.Summariser: summary = 154213 in 00:43:00 =   59.8/s Avg:  3075 Min:     1 Max: 799499 Err:  1898 (1.23%)
+2021-01-31 07:23:00,892 INFO o.a.j.r.Summariser: summary +    212 in 00:00:30 =    7.1/s Avg: 22492 Min:     1 Max: 346195 Err:    19 (8.96%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:23:00,892 INFO o.a.j.r.Summariser: summary = 154425 in 00:43:29 =   59.2/s Avg:  3101 Min:     1 Max: 799499 Err:  1917 (1.24%)
+2021-01-31 07:23:30,605 INFO o.a.j.r.Summariser: summary +    279 in 00:00:30 =    9.4/s Avg: 20497 Min:     1 Max: 361297 Err:    20 (7.17%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:23:30,605 INFO o.a.j.r.Summariser: summary = 154704 in 00:43:59 =   58.6/s Avg:  3133 Min:     1 Max: 799499 Err:  1937 (1.25%)
+2021-01-31 07:24:00,090 INFO o.a.j.r.Summariser: summary +    281 in 00:00:29 =    9.5/s Avg: 16694 Min:     2 Max: 240674 Err:    16 (5.69%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:24:00,090 INFO o.a.j.r.Summariser: summary = 154985 in 00:44:28 =   58.1/s Avg:  3157 Min:     1 Max: 799499 Err:  1953 (1.26%)
+2021-01-31 07:24:30,542 INFO o.a.j.r.Summariser: summary +    297 in 00:00:30 =    9.8/s Avg: 14531 Min:     1 Max: 240580 Err:    15 (5.05%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:24:30,542 INFO o.a.j.r.Summariser: summary = 155282 in 00:44:59 =   57.5/s Avg:  3179 Min:     1 Max: 799499 Err:  1968 (1.27%)
+2021-01-31 07:25:00,115 INFO o.a.j.r.Summariser: summary +    728 in 00:00:30 =   24.6/s Avg:  8282 Min:     1 Max: 472274 Err:    20 (2.75%) Active: 171 Started: 250 Finished: 79
+2021-01-31 07:25:00,115 INFO o.a.j.r.Summariser: summary = 156010 in 00:45:28 =   57.2/s Avg:  3203 Min:     1 Max: 799499 Err:  1988 (1.27%)
