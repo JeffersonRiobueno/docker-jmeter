@@ -6,15 +6,15 @@
 # These will be substituted in JMX test script
 # See also: http://stackoverflow.com/questions/14317715/jmeter-changing-user-defined-variables-from-command-line
 
-export TARGET_TOKEN="2940a35b7b6da4cb6a21804adc57147f8ecc4286da"
-export TARGET_THREADS="3"
+export TARGET_TOKEN="c0bf1f21b271b8ad53dd846af507fc918ecc4286da"
+export TARGET_THREADS="20"
 export TARGET_LOOPS="1"
-export TARGET_TIME="10"
+export TARGET_TIME="60"
 
 T_DIR=tests/compra
 
 # Reporting dir: start fresh
-R_DIR=${T_DIR}/report-$(date +"%F-%H-%M")
+R_DIR=${T_DIR}/trreport-$(date +"%F-%H-%M")
 rm -rf ${R_DIR} > /dev/null 2>&1
 mkdir -p ${R_DIR}
 
