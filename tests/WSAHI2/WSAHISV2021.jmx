@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.0 r1840935">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Plan de Pruebas" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="Variables definidas por el Usuario" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Grupo de Hilos" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Controlador Bucle" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">${TARGET_LOOPS}</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">${TARGET_THREADS}</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">${TARGET_TIME}</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV FLUJO" enabled="true">
+          <stringProp name="delimiter">,</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="filename">dataWH.csv</stringProp>
+          <boolProp name="ignoreFirstLine">false</boolProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="variableNames">USERWEB,PROD,FECHA</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Variables Flujo" enabled="true">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="USERWEB" elementType="Argument">
+              <stringProp name="Argument.name">USERWEB</stringProp>
+              <stringProp name="Argument.value">${USERWEB}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="PROD" elementType="Argument">
+              <stringProp name="Argument.name">PROD</stringProp>
+              <stringProp name="Argument.value">${PROD}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="FECHA" elementType="Argument">
+              <stringProp name="Argument.name">FECHA</stringProp>
+              <stringProp name="Argument.value">${FECHA}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="TARGET_THREADS" elementType="Argument">
+              <stringProp name="Argument.name">TARGET_THREADS</stringProp>
+              <stringProp name="Argument.value">${__P(TARGET_THREADS)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="TARGET_TIME" elementType="Argument">
+              <stringProp name="Argument.name">TARGET_TIME</stringProp>
+              <stringProp name="Argument.value">${__P(TARGET_TIME)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+            <elementProp name="TARGET_LOOPS" elementType="Argument">
+              <stringProp name="Argument.name">TARGET_LOOPS</stringProp>
+              <stringProp name="Argument.value">${__P(TARGET_LOOPS)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </Arguments>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="CStock Antes" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">&lt;soap:Envelope xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&#xd;
+  &lt;soap:Body&gt;&#xd;
+    &lt;WSAHI_ConsultarStock xmlns=&quot;http://tempuri.org/&quot;&gt;&#xd;
+      &lt;cs&gt;&#xd;
+        {&#xd;
+           &quot;productos&quot;:[&#xd;
+              {&#xd;
+                 &quot;codigoProducto&quot;:&quot;${PROD}&quot;,&#xd;
+                 &quot;cantidad&quot;:&quot;1&quot;&#xd;
+              }&#xd;
+           ],&#xd;
+           &quot;fechaEntrega&quot;:&quot;13\/02\/2021&quot;,&#xd;
+           &quot;turnoEnvio&quot;:&quot;08:00 - 13:00&quot;,&#xd;
+           &quot;almacenes&quot;:null,&#xd;
+           &quot;idZona&quot;:50,&#xd;
+           &quot;idReghorario&quot;:null&#xd;
+        }&#xd;
+        &lt;/cs&gt;&#xd;
+    &lt;/WSAHI_ConsultarStock&gt;&#xd;
+  &lt;/soap:Body&gt;&#xd;
+&lt;/soap:Envelope&gt;</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">200.60.145.245</stringProp>
+          <stringProp name="HTTPSampler.port">18088</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/WSAHIRegional/WSIntegracion.asmx</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Gestor de Cabecera HTTP" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value"> text/xml; charset=utf-8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Separa Stock" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#xd;
+&lt;soap:Envelope xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&#xd;
+  &lt;soap:Body&gt;&#xd;
+    &lt;WSAHI_SepararStock xmlns=&quot;http://tempuri.org/&quot;&gt;&#xd;
+      &lt;ss&gt;&#xd;
+        {&#xd;
+           &quot;cs&quot;:{&#xd;
+              &quot;productos&quot;:[&#xd;
+                 {&#xd;
+                    &quot;codigoProducto&quot;:&quot;${PROD}&quot;,&#xd;
+                    &quot;cantidad&quot;:&quot;1&quot;&#xd;
+                 }&#xd;
+              ],&#xd;
+              &quot;fechaEntrega&quot;:&quot;13/02/2021&quot;,&#xd;
+              &quot;turnoEnvio&quot;:&quot;08:00 - 13:00&quot;,&#xd;
+              &quot;almacenes&quot;:[],&#xd;
+              &quot;idZona&quot;:9,&#xd;
+              &quot;idReghorario&quot;:null,&#xd;
+              &quot;esPickup&quot;:0&#xd;
+           },&#xd;
+           &quot;minutosParaLiberarStock&quot;:120,&#xd;
+           &quot;fechaPedido&quot;:&quot;31/01/2021&quot;,&#xd;
+           &quot;codigoWeb&quot;:&quot;${USERWEB}&quot;,&#xd;
+           &quot;moneda&quot;:&quot;PEN&quot;,&#xd;
+           &quot;esPickup&quot;:0&#xd;
+        }&#xd;
+      &lt;/ss&gt;&#xd;
+    &lt;/WSAHI_SepararStock&gt;&#xd;
+  &lt;/soap:Body&gt;&#xd;
+&lt;/soap:Envelope&gt;</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">200.60.145.245</stringProp>
+          <stringProp name="HTTPSampler.port">18088</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/WSAHIRegional/WSIntegracion.asmx</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Gestor de Cabecera HTTP" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value"> text/xml; charset=utf-8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="PP" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#xd;
+&lt;soap:Envelope xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:soap=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&#xd;
+  &lt;soap:Body&gt;&#xd;
+    &lt;WSAHI_ProcesarPedido xmlns=&quot;http://tempuri.org/&quot;&gt;&#xd;
+      &lt;pp&gt;&#xd;
+      {&#xd;
+   &quot;idTipoDocumentoVenta&quot;:6,&#xd;
+   &quot;codigoCliente&quot;:1011827,&#xd;
+   &quot;idEmpresa&quot;:1,&#xd;
+   &quot;origenCorrelativo&quot;:&quot;CajaWeb&quot;,&#xd;
+   &quot;idSCP&quot;:&quot;60&quot;,&#xd;
+   &quot;idECM&quot;:null,&#xd;
+   &quot;total&quot;:&quot;94.00&quot;,&#xd;
+   &quot;impuesto2&quot;:0,&#xd;
+   &quot;fechaPedido&quot;:&quot;31\/01\/2021&quot;,&#xd;
+   &quot;inafecto&quot;:0,&#xd;
+   &quot;codigoMoneda&quot;:&quot;PEN&quot;,&#xd;
+   &quot;codigoWEB&quot;:&quot;${USERWEB}&quot;,&#xd;
+   &quot;observacion&quot;:&quot;obs&quot;,&#xd;
+   &quot;pendienteCobro&quot;:0,&#xd;
+   &quot;direccionFacturaPedido&quot;:&quot;SIN ESPECIFICAR&quot;,&#xd;
+   &quot;idContacto&quot;:0,&#xd;
+   &quot;user&quot;:&quot;WEB&quot;,&#xd;
+   &quot;fechaEntrega&quot;:&quot;13\/02\/2021&quot;,&#xd;
+   &quot;productos&quot;:[&#xd;
+      {&#xd;
+         &quot;codigoProducto&quot;:&quot;${PROD}&quot;,&#xd;
+         &quot;cantidad&quot;:&quot;1&quot;,&#xd;
+         &quot;unidad&quot;:1,&#xd;
+         &quot;afectoECM&quot;:null,&#xd;
+         &quot;cantInventario&quot;:&quot;1&quot;,&#xd;
+         &quot;precio&quot;:&quot;59.00&quot;,&#xd;
+         &quot;parcial&quot;:&quot;59.00&quot;,&#xd;
+         &quot;inafecto&quot;:0,&#xd;
+         &quot;porcDescuento&quot;:0,&#xd;
+         &quot;fechaDescargo&quot;:&quot;13\/02\/2021&quot;,&#xd;
+         &quot;docReferenciaProducto&quot;:&quot;257701&quot;&#xd;
+      }, {&#xd;
+         &quot;codigoProducto&quot;:&quot;FLETE&quot;,&#xd;
+         &quot;cantidad&quot;:1,&#xd;
+         &quot;unidad&quot;:1,&#xd;
+         &quot;afectoECM&quot;:null,&#xd;
+         &quot;cantInventario&quot;:1,&#xd;
+         &quot;precio&quot;:&quot;35.00&quot;,&#xd;
+         &quot;parcial&quot;:&quot;35.00&quot;,&#xd;
+         &quot;inafecto&quot;:0,&#xd;
+         &quot;porcDescuento&quot;:0,&#xd;
+         &quot;fechaDescargo&quot;:&quot;31\/01\/2021&quot;,&#xd;
+         &quot;docReferenciaProducto&quot;:0&#xd;
+      }&#xd;
+   ],&#xd;
+   &quot;formaPago&quot;:&quot;21&quot;,&#xd;
+   &quot;nroOrden&quot;:&quot;555791&quot;,&#xd;
+   &quot;horaEntrega1&quot;:&quot;08&quot;,&#xd;
+   &quot;horaEntrega2&quot;:&quot;13&quot;,&#xd;
+   &quot;motCodi&quot;:1,&#xd;
+   &quot;destinatarioDelivery&quot;:&quot;TEST, TEST&quot;,&#xd;
+   &quot;distrito&quot;:&quot;1266&quot;,&#xd;
+   &quot;urbanizacion&quot;:&quot;&quot;,&#xd;
+   &quot;direccionDelivery&quot;:&quot;Enrique seoane 465 dept 301&quot;,&#xd;
+   &quot;direccionReferencia&quot;:&quot;test&quot;,&#xd;
+   &quot;identificador&quot;:0,&#xd;
+   &quot;tarjetaMensaje&quot;:&quot;gyh&quot;,&#xd;
+   &quot;tarjeta&quot;:&quot;&quot;,&#xd;
+   &quot;idTipoTarjeta&quot;:0,&#xd;
+   &quot;horaReferencia&quot;:&quot;08:00&quot;,&#xd;
+   &quot;notas&quot;:&quot;&quot;,&#xd;
+   &quot;noImpTarjeta&quot;:0,&#xd;
+   &quot;swPuntual&quot;:0,&#xd;
+   &quot;idZona&quot;:&quot;93&quot;,&#xd;
+   &quot;recargoEnvio&quot;:&quot;35.00&quot;,&#xd;
+   &quot;idPais&quot;:1,&#xd;
+   &quot;idAlmacen&quot;:&quot;49&quot;,&#xd;
+   &quot;turnoEnvio&quot;:&quot;08:00 - 13:00&quot;,&#xd;
+   &quot;esPickup&quot;:0&#xd;
+}&#xd;
+        &lt;/pp&gt;&#xd;
+    &lt;/WSAHI_ProcesarPedido&gt;&#xd;
+  &lt;/soap:Body&gt;&#xd;
+&lt;/soap:Envelope&gt;</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">200.60.145.245</stringProp>
+          <stringProp name="HTTPSampler.port">18088</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/WSAHIRegional/WSIntegracion.asmx</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Gestor de Cabecera HTTP" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value"> text/xml; charset=utf-8</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="Ver Árbol de Resultados" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
