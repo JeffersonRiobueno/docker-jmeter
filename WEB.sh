@@ -9,7 +9,7 @@
 export TARGET_TOKEN="2940a35b7b6da4cb6a21804adc57147f8ecc4286da"
 export TARGET_THREADS="3"
 export TARGET_LOOPS="1"
-export TARGET_TIME="60"
+export TARGET_TIME="10"
 
 T_DIR=tests/compra
 
