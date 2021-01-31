@@ -6,9 +6,9 @@
 # These will be substituted in JMX test script
 # See also: http://stackoverflow.com/questions/14317715/jmeter-changing-user-defined-variables-from-command-line
 
-export TARGET_TOKEN="25c0dd90fc4ac6c135df0d02ab5f24738ecc4286da"
+export TARGET_TOKEN="7004ded24f43a4450968747fa79f06de8ecc4286da"
 export TARGET_THREADS="250"
-export TARGET_LOOPS="5"
+export TARGET_LOOPS="2"
 export TARGET_TIME="60"
 
 T_DIR=tests/compra2
@@ -20,7 +20,7 @@ mkdir -p ${R_DIR}
 
 /bin/rm -f ${T_DIR}/test-plan.jtl ${T_DIR}/jmeter.log  > /dev/null 2>&1
 
-./run.sh -Dlog_level.jmeter=DEBUG \
+./run2.sh -Dlog_level.jmeter=DEBUG \
 	-JTARGET_THREADS=${TARGET_THREADS} -JTARGET_TOKEN=${TARGET_TOKEN} \
 	-JTARGET_TIME=${TARGET_TIME} -JTARGET_LOOPS=${TARGET_LOOPS} \
 	-n -t ${T_DIR}/PSWRSV-2021.jmx -l ${T_DIR}/test-plan.jtl -j ${T_DIR}/jmeter.log \
