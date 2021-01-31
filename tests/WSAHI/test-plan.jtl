@@ -1,0 +1,4 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1612058344407,1312,CStock Antes,200,OK,Grupo de Hilos 1-1,text,true,,768,894,1,1,http://200.60.145.245:18088/WSAHIRegional/WSIntegracion.asmx,1312,0,30
+1612058345721,82,Separa Stock,200,OK,Grupo de Hilos 1-1,text,true,,681,1202,1,1,http://200.60.145.245:18088/WSAHIRegional/WSIntegracion.asmx,82,0,0
+1612058345804,752,PP,200,OK,Grupo de Hilos 1-1,text,true,,664,2404,1,1,http://200.60.145.245:18088/WSAHIRegional/WSIntegracion.asmx,752,0,0

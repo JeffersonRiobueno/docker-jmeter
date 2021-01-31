@@ -1,0 +1,14 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1612058147224,662,Category,200,OK,Grupo de Hilos 1-1,text,true,,1301,185,1,1,https://approsatel.grupogrameco.com:19040/api/category/List?LangId=1&CountryID=1&IDSCP=435,662,0,633
+1612058147886,20,SubCategory,200,OK,Grupo de Hilos 1-1,text,true,,1531,179,1,1,https://approsatel.grupogrameco.com:19040/api/subcategory/List?LangId=1&CategoryID=4,20,0,0
+1612058147906,35,ConfigValues,200,OK,Grupo de Hilos 1-1,text,true,,1471,169,1,1,https://approsatel.grupogrameco.com:19040/api/config/ConfigValues?LangId=1,35,0,0
+1612058147942,14,StoreList,200,OK,Grupo de Hilos 1-1,text,true,,1048,179,1,1,https://approsatel.grupogrameco.com:19040/api/config/StoreList?CountryID=1&IDSCP=435,14,0,0
+1612058147957,14,RelationShipList,200,OK,Grupo de Hilos 1-1,text,true,,1373,164,1,1,https://approsatel.grupogrameco.com:19040/api/config/RelationShipList,14,0,0
+1612058147980,23,ConfigValuesDocumentTypeList,200,OK,Grupo de Hilos 1-1,text,true,,547,265,1,1,https://approsatel.grupogrameco.com:19040/api/config/DocumentTypeList,23,0,0
+1612058148004,1839,productList,200,OK,Grupo de Hilos 1-1,text,true,,6669,384,1,1,https://approsatel.grupogrameco.com:19040/api/product/List,1835,0,0
+1612058149844,434,productSearch,200,OK,Grupo de Hilos 1-1,text,true,,4738,372,1,1,https://approsatel.grupogrameco.com:19040/api/product/Search,431,0,16
+1612058150279,60,OrderList,200,OK,Grupo de Hilos 1-1,text,true,,2110,281,1,1,https://approsatel.grupogrameco.com:19040/api/Order/List,60,0,0
+1612058150340,19,OrderDetail,200,OK,Grupo de Hilos 1-1,text,true,,650,245,1,1,https://approsatel.grupogrameco.com:19040/api/Order/Detail,19,0,0
+1612058150360,25,User/Detail,200,OK,Grupo de Hilos 1-1,text,true,,570,289,1,1,https://approsatel.grupogrameco.com:19040/api/User/Detail,25,0,0
+1612058150386,21,User/Update,200,OK,Grupo de Hilos 1-1,text,true,,601,460,1,1,https://approsatel.grupogrameco.com:19040/api/User/Update,21,0,0
+1612058150408,296,SeparateStock,200,OK,Grupo de Hilos 1-1,text,true,,277,507,1,1,https://approsatel.grupogrameco.com:19040/api/Order/SeparateStock,295,0,0
